@@ -9,7 +9,8 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--filesystem=home"
+        "--filesystem=home:ro",
+        "--filesystem=xdg-data/applications:create"
     ],
     "cleanup" : [
         "/include",
