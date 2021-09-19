@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Desktop Files Creator
+Exec=desktop-files-creator
+Icon=com.github.alexkdeveloper.desktop-files-creator
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

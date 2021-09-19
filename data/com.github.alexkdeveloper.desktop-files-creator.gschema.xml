@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="desktop-files-creator">
+	<schema id="com.github.alexkdeveloper.desktop-files-creator" path="/com/github/alexkdeveloper/desktop-files-creator/">
+	</schema>
+</schemalist>
