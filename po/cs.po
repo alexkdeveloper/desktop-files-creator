@@ -1,0 +1,54 @@
+# Czech translations for desktop-files-creator package.
+# Copyright (C) 2021 - vikdevelop
+# This file is distributed under the same license as the gsmartcontrol package.
+# vikdevelop (super-vik1@protonmail.com), 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-files 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/alexkdeveloper/desktop-files-creator"
+"Support\n"
+"POT-Creation-Date: 2021-09-23 01:51+0400\n"
+"PO-Revision-Date: 2021-09-23 15:22+0400\n"
+"Last-Translator:   vikdevelop <super-vik1@protonmail.com>\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/window.ui:35
+msgid "Name:"
+msgstr "Název:"
+
+#: src/window.ui:72
+msgid "Exec:"
+msgstr "Příkaz:"
+
+#: src/window.ui:109
+msgid "Icon:"
+msgstr "Ikona:"
+
+#: src/window.ui:146
+msgid "Categories:"
+msgstr "Kategorie:"
+
+#: src/window.ui:183
+msgid "Comment:"
+msgstr "Popisek:"
+
+#: src/window.ui:212
+msgid "NoDisplay"
+msgstr "Nezobrazovat na obrazovce"
+
+#: src/window.ui:226
+msgid "Terminal"
+msgstr "Otevřít v terminálu"
+
+#: src/window.ui:240
+msgid "CREATE"
+msgstr "VYTVOŘIT"
+
+#: src/window.ui:264
+msgid "open folder"
+msgstr "Otevřít složku"
