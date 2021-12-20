@@ -46,6 +46,7 @@ namespace DesktopFilesCreator {
 			entry_name.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
               entry_name.set_text("");
+              entry_name.grab_focus();
            }
         });
         entry_exec.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
@@ -64,12 +65,14 @@ namespace DesktopFilesCreator {
         entry_categories.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
             entry_categories.set_text ("");
+            entry_categories.grab_focus();
            }
         });
         entry_comment.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
         entry_comment.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
             entry_comment.set_text ("");
+            entry_comment.grab_focus();
            }
         });
         button_open.clicked.connect(on_open_directory);
