@@ -50,7 +50,14 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
-     <release version="1.0.1" date="2021-12-20">
+     <release version="1.0.2" date="2021-12-29">
+     <description>
+      <ul>
+       <li>Added Italian translation</li>
+     </ul>
+    </description>
+  </release>
+   <release version="1.0.1" date="2021-12-20">
    <description>
     <ul>
      <li>Update to GNOME Platform version 41</li>
