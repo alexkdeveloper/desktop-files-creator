@@ -18,7 +18,7 @@
 
 namespace DesktopFilesCreator {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/desktop-files-creator/window.ui")]
-	public class Window : Gtk.ApplicationWindow {
+	public class Window : Hdy.ApplicationWindow {
 		[GtkChild]
 		unowned Gtk.Entry entry_name;
         [GtkChild]
@@ -84,6 +84,8 @@ namespace DesktopFilesCreator {
             button_create.set_sensitive(false);
             button_open.set_sensitive(false);
            }
+
+		    Hdy.init();
 		}
 
 		private void on_open_exec(){
