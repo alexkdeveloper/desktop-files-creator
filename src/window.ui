@@ -254,14 +254,14 @@
       <object class="GtkHeaderBar" id="header_bar">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="title">Desktop Files Creator</property>
+        <property name="title" translatable="yes">Desktop Files Creator</property>
         <property name="show-close-button">True</property>
         <child>
           <object class="GtkButton" id="button_open">
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
-            <property name="tooltip-text" translatable="yes">open folder</property>
+            <property name="tooltip-text" translatable="yes">Open Folder</property>
             <property name="image">image1</property>
             <property name="always-show-image">True</property>
           </object>
