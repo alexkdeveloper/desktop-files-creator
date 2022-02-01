@@ -1,0 +1,98 @@
+# Spanish translations for desktop-files-creator package.
+# Copyright (C) 2022 THE desktop-files-creator'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop-files-creator package.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-files-creator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-01 16:02+0100\n"
+"PO-Revision-Date: 2022-02-01 16:02+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
+#: src/window.ui:257
+msgid "Desktop Files Creator"
+msgstr "Creador de archivos de escritorio"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:4
+msgid "Simple app for create a desktop files"
+msgstr "Aplicación sencilla para crear archivos de escritorio"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
+msgid "Develop;"
+msgstr "Develop;Desarrollo;"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
+msgid "Simple app for create a desktop files on GNU/Linux"
+msgstr "Aplicación sencilla para crear archivos de escritorio en GNU/Linux"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:9
+msgid ""
+"The application allows you to create desktop files in GNU/Linux "
+"distributions."
+msgstr ""
+"La aplicación permite crear archivos de escritorio en distribuciones GNU/"
+"Linux."
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:28
+msgid "Added Italian translation"
+msgstr "Añadida la traducción al italiano"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:35
+msgid "Update to GNOME Platform version 41"
+msgstr "Actualización a la versión 41 de GNOME Platform"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:36
+msgid "Added Czech translation"
+msgstr "Añadida la traducción al checo"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:43
+msgid "Initial release"
+msgstr "Versión inicial"
+
+#: src/window.ui:35
+msgid "Name:"
+msgstr "Nombre:"
+
+#: src/window.ui:72
+msgid "Exec:"
+msgstr "Ejecutar:"
+
+#: src/window.ui:109
+msgid "Icon:"
+msgstr "Icono:"
+
+#: src/window.ui:146
+msgid "Categories:"
+msgstr "Categorías:"
+
+#: src/window.ui:183
+msgid "Comment:"
+msgstr "Comentario:"
+
+#: src/window.ui:212
+msgid "NoDisplay"
+msgstr "Sin pantalla"
+
+#: src/window.ui:226
+msgid "Terminal"
+msgstr "Terminal"
+
+#: src/window.ui:240
+msgid "CREATE"
+msgstr "CREAR"
+
+#: src/window.ui:264
+msgid "Open Folder"
+msgstr "Abrir carpeta"
