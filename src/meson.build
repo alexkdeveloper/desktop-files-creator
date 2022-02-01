@@ -16,6 +16,9 @@ desktop_files_creator_sources += gnome.compile_resources('desktop_files_creator-
 )
 
 executable('desktop-files-creator', desktop_files_creator_sources,
-  vala_args: '--target-glib=2.50',  dependencies: desktop_files_creator_deps,
+  include_directories: config_h_dir,
+  vala_args: ['--target-glib=2.50', meson.source_root() + '/src/config.vapi'],
+  c_args: ['-include', 'config.h'],
+  dependencies: desktop_files_creator_deps,
   install: true,
 )

@@ -7,7 +7,12 @@ project('desktop-files-creator', ['c', 'vala'],
 
 i18n = import('i18n')
 
+config_h_dir = include_directories('.')
 
+conf = configuration_data()
+conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+conf.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+configure_file(output: 'config.h', configuration: conf)
 
 subdir('data')
 subdir('src')
