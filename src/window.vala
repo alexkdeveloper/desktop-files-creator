@@ -77,6 +77,7 @@ namespace DesktopFilesCreator {
         });
         button_open.clicked.connect(on_open_directory);
         button_create.clicked.connect(on_create_file);
+	entry_name.grab_focus();
         directory_path = Environment.get_home_dir()+"/.local/share/applications";
         GLib.File file = GLib.File.new_for_path(directory_path);
          if(!file.query_exists()){
