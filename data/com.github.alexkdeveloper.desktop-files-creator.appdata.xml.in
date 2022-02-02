@@ -11,7 +11,7 @@
   <provides>
     <binary>com.github.alexkdeveloper.desktop-files-creator</binary>
   </provides>
-  <developer_name>Alex Kryuchkov</developer_name>
+  <developer_name translatable="no">Alex Kryuchkov</developer_name>
   <url type="homepage">http://github.com/alexkdeveloper/desktop-files-creator</url>
   <url type="bugtracker">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
   <url type="help">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
