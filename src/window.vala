@@ -81,7 +81,7 @@ namespace DesktopFilesCreator {
         directory_path = Environment.get_home_dir()+"/.local/share/applications";
         GLib.File file = GLib.File.new_for_path(directory_path);
          if(!file.query_exists()){
-            alert("Error!\nPath "+directory_path+" is not exists!\nThe program will not be able to perform its functions.");
+            alert(_("Error!\nPath ")+directory_path+_(" is not exists!\nThe program will not be able to perform its functions."));
             button_create.set_sensitive(false);
             button_open.set_sensitive(false);
            }
@@ -90,7 +90,7 @@ namespace DesktopFilesCreator {
 		}
 
 		private void on_open_exec(){
-        var file_chooser = new Gtk.FileChooserDialog ("Choose a file", this, Gtk.FileChooserAction.OPEN, "_Cancel", Gtk.ResponseType.CANCEL, "_Open", Gtk.ResponseType.ACCEPT);
+        var file_chooser = new Gtk.FileChooserDialog (_("Open File"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
         if (file_chooser.run () == Gtk.ResponseType.ACCEPT) {
             entry_exec.set_text(file_chooser.get_filename());
         }
@@ -98,7 +98,7 @@ namespace DesktopFilesCreator {
    }
 
         private void on_open_icon () {
-        var file_chooser = new Gtk.FileChooserDialog ("Select image file", this, Gtk.FileChooserAction.OPEN, "_Cancel", Gtk.ResponseType.CANCEL, "_Open", Gtk.ResponseType.ACCEPT);
+        var file_chooser = new Gtk.FileChooserDialog (_("Open Image"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
 	    Gtk.FileFilter filter = new Gtk.FileFilter ();
 		file_chooser.set_filter (filter);
 		filter.add_mime_type ("image/jpeg");
@@ -130,24 +130,24 @@ namespace DesktopFilesCreator {
             try{
                 Gtk.show_uri_on_window(this, "file://"+directory_path, Gdk.CURRENT_TIME);
             }catch(Error e){
-                alert("Error!\n"+e.message);
+                alert(_("Error!\n")+e.message);
             }
        }
 
        private void on_create_file (){
        if(is_empty(entry_name.get_text())){
-             alert("Enter the name");
+             alert(_("Enter the name"));
              entry_name.grab_focus();
              return;
          }
          GLib.File file = GLib.File.new_for_path(directory_path+"/"+entry_name.get_text().strip()+".desktop");
          if(file.query_exists()){
-            alert("A file with the same name already exists");
+            alert(_("A file with the same name already exists"));
             entry_name.grab_focus();
             return;
          }
-         var dialog_create_desktop_file = new Gtk.MessageDialog(this,Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, "Create file "+file.get_basename()+" ?");
-          dialog_create_desktop_file.set_title("Question");
+         var dialog_create_desktop_file = new Gtk.MessageDialog(this,Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Create file ")+file.get_basename()+_(" ?"));
+          dialog_create_desktop_file.set_title(_("Create"));
           Gtk.ResponseType result = (Gtk.ResponseType)dialog_create_desktop_file.run ();
           dialog_create_desktop_file.destroy();
           if(result==Gtk.ResponseType.OK){
@@ -190,15 +190,15 @@ Categories="+entry_categories.get_text().strip();
         }
         GLib.File file = GLib.File.new_for_path(path);
          if(file.query_exists()){
-             alert("File "+file.get_basename()+" is created!\nPath: "+path);
+             alert(_("File ")+file.get_basename()+_(" is created!\nPath: ")+path);
          }else{
-             alert("Error! Could not create file");
+             alert(_("Error! Could not create file"));
          }
        }
 
        private void alert (string str){
           var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title("Message");
+          dialog_alert.set_title(_("Message"));
           dialog_alert.run();
           dialog_alert.destroy();
        }
