@@ -30,9 +30,9 @@ namespace DesktopFilesCreator {
         [GtkChild]
         unowned Gtk.Entry entry_comment;
         [GtkChild]
-        unowned Gtk.CheckButton checkbutton_no_display;
+        unowned Gtk.Switch switch_no_display;
         [GtkChild]
-        unowned Gtk.CheckButton checkbutton_terminal;
+        unowned Gtk.Switch switch_terminal;
         [GtkChild]
         unowned Gtk.Button button_open;
         [GtkChild]
@@ -161,13 +161,13 @@ namespace DesktopFilesCreator {
 
        private void create_desktop_file(){
          string display;
-         if(checkbutton_no_display.get_active()){
+         if(switch_no_display.get_active()){
              display="true";
          }else{
              display="false";
          }
          string terminal;
-         if(checkbutton_terminal.get_active()){
+         if(switch_terminal.get_active()){
              terminal="true";
          }else{
              terminal="false";
