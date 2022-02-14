@@ -2,8 +2,8 @@
 <interface>
   <template class="DesktopFilesCreatorWindow" parent="HdyApplicationWindow">
     <property name="can-focus">False</property>
-    <property name="default-width">460</property>
-    <property name="default-height">665</property>
+    <property name="default-width">480</property>
+    <property name="default-height">670</property>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>
@@ -20,15 +20,16 @@
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
                 <property name="label" translatable="yes">Open folder</property>
-                <property name="tooltip-text" translatable="yes">Open desktop files folder.</property>
+                <property name="tooltip-text" translatable="yes">Open desktop files folder</property>
                 <property name="always-show-image">True</property>
               </object>
             </child>
             <child>
               <object class="GtkButton" id="button_create">
-                <property name="label" translatable="yes">Create</property>
+                <property name="label" translatable="yes">Create file</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">Create desktop file</property>
                 <property name="receives-default">True</property>
               </object>
               <packing>
