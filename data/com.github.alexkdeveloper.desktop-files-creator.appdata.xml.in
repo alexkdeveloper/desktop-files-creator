@@ -15,6 +15,7 @@
   <url type="homepage">http://github.com/alexkdeveloper/desktop-files-creator</url>
   <url type="bugtracker">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
   <url type="help">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
+  <url type="donation">https://www.blockchain.com/btc/address/bc1ql3ga4w9jtmxfe3pt8vfzydfd3zfpzks8hu5qfu</url>
   <screenshots>
     <screenshot type="default">
     <image>https://raw.githubusercontent.com/alexkdeveloper/desktop-files-creator/main/screenshot.png</image>
@@ -50,6 +51,13 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <releases>
+    <release version="1.0.5" date="2022-02-16">
+     <description>
+      <ul>
+       <li>A small update to the user interface</li>
+     </ul>
+    </description>
+   </release>
       <release version="1.0.4" date="2022-02-14">
      <description>
       <ul>
