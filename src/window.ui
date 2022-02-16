@@ -323,7 +323,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">NoDisplay:</property>
+                            <property name="label" translatable="yes">NoDisplay</property>
                             <property name="xalign">0</property>
                             <property name="halign">start</property>
                             <property name="hexpand">True</property>
@@ -372,7 +372,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Terminal:</property>
+                            <property name="label" translatable="yes">Terminal</property>
                             <property name="xalign">0</property>
                             <property name="halign">start</property>
                             <property name="hexpand">True</property>
