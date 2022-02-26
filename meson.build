@@ -1,4 +1,4 @@
-project('desktop-files-creator', ['c', 'vala'],
+project('desktop-files-creator', 'vala',
           version: '0.1.0',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2',
