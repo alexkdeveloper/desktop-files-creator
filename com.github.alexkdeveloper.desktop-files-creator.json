@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.alexkdeveloper.desktop-files-creator",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
     "command" : "desktop-files-creator",
     "finish-args" : [
@@ -30,8 +30,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/alexkdeveloper/desktop-files-creator.git"
+                    "type" : "dir",
+                    "path" : "."
                 }
             ]
         }
