@@ -9,8 +9,6 @@ desktop_files_creator_deps = [
   dependency('libhandy-1', version: '>= 1.0.0'),
 ]
 
-gnome = import('gnome')
-
 desktop_files_creator_sources += gnome.compile_resources('desktop_files_creator-resources',
   'desktop_files_creator.gresource.xml',
   c_name: 'desktop_files_creator'
