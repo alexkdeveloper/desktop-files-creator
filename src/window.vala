@@ -18,7 +18,7 @@
 
 namespace DesktopFilesCreator {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/desktop-files-creator/window.ui")]
-	public class Window : Hdy.ApplicationWindow {
+	public class Window : Adw.ApplicationWindow {
 		[GtkChild]
 		unowned Gtk.Entry entry_name;
         [GtkChild]
@@ -40,139 +40,118 @@ namespace DesktopFilesCreator {
 
         private string directory_path;
 
-		public Window (Gtk.Application app) {
+		public Window (Adw.Application app) {
 			Object (application: app);
 			entry_name.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
 			entry_name.icon_press.connect ((pos, event) => {
-        if (pos == Gtk.EntryIconPosition.SECONDARY) {
-              entry_name.set_text("");
-              entry_name.grab_focus();
-           }
-        });
-        entry_exec.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
-			entry_exec.icon_press.connect ((pos, event) => {
-        if (pos == Gtk.EntryIconPosition.SECONDARY) {
-              on_open_exec();
-           }
-          });
-          entry_icon.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
+                entry_name.set_text("");
+                entry_name.grab_focus();
+            });
+            entry_exec.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
+		    entry_exec.icon_press.connect ((pos, event) => {
+                on_open_exec();
+            });
+            entry_icon.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
 			entry_icon.icon_press.connect ((pos, event) => {
-        if (pos == Gtk.EntryIconPosition.SECONDARY) {
-              on_open_icon();
-           }
-          });
-          entry_categories.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-        entry_categories.icon_press.connect ((pos, event) => {
-        if (pos == Gtk.EntryIconPosition.SECONDARY) {
-            entry_categories.set_text ("");
-            entry_categories.grab_focus();
-           }
-        });
-        entry_comment.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-        entry_comment.icon_press.connect ((pos, event) => {
-        if (pos == Gtk.EntryIconPosition.SECONDARY) {
-            entry_comment.set_text ("");
-            entry_comment.grab_focus();
-           }
-        });
-        button_open.clicked.connect(on_open_directory);
-        button_create.clicked.connect(on_create_file);
-	entry_name.grab_focus();
-        directory_path = Environment.get_home_dir()+"/.local/share/applications";
-        GLib.File file = GLib.File.new_for_path(directory_path);
-         if(!file.query_exists()){
-            alert(_("Error!\nPath ")+directory_path+_(" is not exists!\nThe program will not be able to perform its functions."));
-            button_create.set_sensitive(false);
-            button_open.set_sensitive(false);
-           }
-
-		    Hdy.init();
+			    on_open_icon();
+            });
+            entry_categories.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
+            entry_categories.icon_press.connect ((pos, event) => {
+                entry_categories.set_text ("");
+                entry_categories.grab_focus();
+            });
+            entry_comment.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
+            entry_comment.icon_press.connect ((pos, event) => {
+                entry_comment.set_text ("");
+                entry_comment.grab_focus();
+            });
+            button_open.clicked.connect(on_open_directory);
+            button_create.clicked.connect(on_create_file);
+	        entry_name.grab_focus();
+            directory_path = Environment.get_home_dir()+"/.local/share/applications";
+            GLib.File file = GLib.File.new_for_path(directory_path);
+            if(!file.query_exists()){
+                alert(_("Error!\nPath ")+directory_path+_(" is not exists!\nThe program will not be able to perform its functions."));
+                button_create.set_sensitive(false);
+                button_open.set_sensitive(false);
+            }
 		}
 
 		private void on_open_exec(){
-        var file_chooser = new Gtk.FileChooserDialog (_("Open File"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
-        if (file_chooser.run () == Gtk.ResponseType.ACCEPT) {
-            entry_exec.set_text(file_chooser.get_filename());
+            var file_chooser = new Gtk.FileChooserDialog (_("Open File"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
+            file_chooser.set_modal(true);
+            file_chooser.response.connect((response) => {
+                if (response == Gtk.ResponseType.ACCEPT) {
+                    entry_exec.set_text(file_chooser.get_file().get_path());
+                }
+                file_chooser.close();
+            });
+
+            file_chooser.show();
         }
-        file_chooser.destroy ();
-   }
 
         private void on_open_icon () {
-        var file_chooser = new Gtk.FileChooserDialog (_("Open Image"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
-	    Gtk.FileFilter filter = new Gtk.FileFilter ();
-		file_chooser.set_filter (filter);
-		filter.add_mime_type ("image/jpeg");
-        filter.add_mime_type ("image/png");
-        Gtk.Image preview_area = new Gtk.Image ();
-		file_chooser.set_preview_widget (preview_area);
-		file_chooser.update_preview.connect (() => {
-			string uri = file_chooser.get_preview_uri ();
-			string path = file_chooser.get_preview_filename();
-			if (uri != null && uri.has_prefix ("file://") == true) {
-				try {
-					Gdk.Pixbuf pixbuf = new Gdk.Pixbuf.from_file_at_scale (path, 250, 250, true);
-					preview_area.set_from_pixbuf (pixbuf);
-					preview_area.show ();
-				} catch (Error e) {
-					preview_area.hide ();
-				}
-			} else {
-				preview_area.hide ();
-			}
-		});
-        if (file_chooser.run () == Gtk.ResponseType.ACCEPT) {
-            entry_icon.set_text(file_chooser.get_filename());
-        }
-        file_chooser.destroy ();
+            var file_chooser = new Gtk.FileChooserDialog (_("Open Image"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
+            file_chooser.set_modal(true);
+            Gtk.FileFilter filter = new Gtk.FileFilter ();
+            file_chooser.set_filter (filter);
+            filter.add_mime_type ("image/jpeg");
+            filter.add_mime_type ("image/png");
+            file_chooser.response.connect((response) => {
+                if (response == Gtk.ResponseType.ACCEPT) {
+                    entry_icon.set_text(file_chooser.get_file().get_path());
+                }
+                file_chooser.close();
+            });
+
+            file_chooser.show();
        }
 
-       private void on_open_directory(){
-            try{
-                Gtk.show_uri_on_window(this, "file://"+directory_path, Gdk.CURRENT_TIME);
-            }catch(Error e){
-                alert(_("Error!\n")+e.message);
+        private void on_open_directory() {
+            Gtk.show_uri(this, "file://"+directory_path, Gdk.CURRENT_TIME);
+        }
+
+        private void on_create_file (){
+            if(is_empty(entry_name.get_text())){
+                alert(_("Enter the name"));
+                entry_name.grab_focus();
+                return;
             }
-       }
-
-       private void on_create_file (){
-       if(is_empty(entry_name.get_text())){
-             alert(_("Enter the name"));
-             entry_name.grab_focus();
-             return;
-         }
-         GLib.File file = GLib.File.new_for_path(directory_path+"/"+entry_name.get_text().strip()+".desktop");
-         if(file.query_exists()){
-            alert(_("A file with the same name already exists"));
-            entry_name.grab_focus();
-            return;
-         }
-         var dialog_create_desktop_file = new Gtk.MessageDialog(this,Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Create file ")+file.get_basename()+_(" ?"));
-          dialog_create_desktop_file.set_title(_("Create"));
-          Gtk.ResponseType result = (Gtk.ResponseType)dialog_create_desktop_file.run ();
-          dialog_create_desktop_file.destroy();
-          if(result==Gtk.ResponseType.OK){
-              create_desktop_file();
-          }
-   }
-
-       private bool is_empty(string str){
-          return str.strip().length == 0;
+            GLib.File file = GLib.File.new_for_path(directory_path+"/"+entry_name.get_text().strip()+".desktop");
+            if(file.query_exists()){
+                alert(_("A file with the same name already exists"));
+                entry_name.grab_focus();
+                return;
+            }
+            var dialog_create_desktop_file = new Gtk.MessageDialog(this,Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Create file ")+file.get_basename()+_(" ?"));
+            dialog_create_desktop_file.set_title(_("Create"));
+            dialog_create_desktop_file.show();
+            dialog_create_desktop_file.response.connect((response) => {
+                if (response == Gtk.ResponseType.OK) {
+                    create_desktop_file();
+                }
+                dialog_create_desktop_file.close();
+            });
         }
 
-       private void create_desktop_file(){
-         string display;
-         if(switch_no_display.get_active()){
-             display="true";
-         }else{
-             display="false";
-         }
-         string terminal;
-         if(switch_terminal.get_active()){
-             terminal="true";
-         }else{
-             terminal="false";
-         }
-         string desktop_file="[Desktop Entry]
+        private bool is_empty(string str) {
+            return str.strip().length == 0;
+        }
+
+        private void create_desktop_file() {
+            string display;
+            if(switch_no_display.get_active()) {
+                display="true";
+            } else {
+                display="false";
+            }
+            string terminal;
+            if(switch_terminal.get_active()) {
+                terminal="true";
+            } else {
+                terminal="false";
+            }
+            string desktop_file="[Desktop Entry]
 Encoding=UTF-8
 Type=Application
 NoDisplay="+display+"
@@ -182,25 +161,25 @@ Icon="+entry_icon.get_text().strip()+"
 Name="+entry_name.get_text().strip()+"
 Comment="+entry_comment.get_text().strip()+"
 Categories="+entry_categories.get_text().strip();
-        string path=directory_path+"/"+entry_name.get_text()+".desktop";
-        try {
-            FileUtils.set_contents (path, desktop_file);
-        } catch (Error e) {
-            stderr.printf ("Error: %s\n", e.message);
+            string path=directory_path+"/"+entry_name.get_text()+".desktop";
+            try {
+                FileUtils.set_contents (path, desktop_file);
+            } catch (Error e) {
+                stderr.printf ("Error: %s\n", e.message);
+            }
+            GLib.File file = GLib.File.new_for_path(path);
+            if(file.query_exists()) {
+                alert(_("File ")+file.get_basename()+_(" is created!\nPath: ")+path);
+            }else{
+                alert(_("Error! Could not create file"));
+            }
         }
-        GLib.File file = GLib.File.new_for_path(path);
-         if(file.query_exists()){
-             alert(_("File ")+file.get_basename()+_(" is created!\nPath: ")+path);
-         }else{
-             alert(_("Error! Could not create file"));
-         }
-       }
 
-       private void alert (string str){
-          var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title(_("Message"));
-          dialog_alert.run();
-          dialog_alert.destroy();
-       }
+        private void alert (string str){
+            var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
+            dialog_alert.set_title(_("Message"));
+            dialog_alert.response.connect((_) => { dialog_alert.close(); });
+            dialog_alert.show();
+        }
 	}
 }

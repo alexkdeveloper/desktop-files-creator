@@ -21,7 +21,7 @@ int main (string[] args) {
     Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
     Intl.textdomain (Config.GETTEXT_PACKAGE);
 
-	var app = new Gtk.Application ("com.github.alexkdeveloper.desktop-files-creator", ApplicationFlags.FLAGS_NONE);
+	var app = new Adw.Application ("com.github.alexkdeveloper.desktop-files-creator", ApplicationFlags.FLAGS_NONE);
 	app.activate.connect (() => {
 		var win = app.active_window;
 		if (win == null) {
