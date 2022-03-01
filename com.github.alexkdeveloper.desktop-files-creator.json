@@ -25,7 +25,7 @@
     ],
     "modules" : [
         {
-            "name" : "Desktop Files Creator",
+            "name" : "desktop-files-creator",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
