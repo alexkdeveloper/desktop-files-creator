@@ -75,6 +75,10 @@ namespace DesktopFilesCreator {
                 button_create.set_sensitive(false);
                 button_open.set_sensitive(false);
             }
+
+            if (Config.DEVELOPMENT) {
+                add_css_class ("devel");
+            }
 		}
 
 		private void on_open_exec(){
