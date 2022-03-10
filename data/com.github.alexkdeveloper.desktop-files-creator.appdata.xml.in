@@ -46,6 +46,13 @@
   <translation type="gettext">com.github.alexkdeveloper.desktop-files-creator</translation>
 
   <releases>
+    <release version="1.0.6" date="2022-03-10">
+      <description>
+        <ul>
+          <li>Port to GTK4 + libadwaita</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.5" date="2022-02-16">
       <description>
         <ul>
