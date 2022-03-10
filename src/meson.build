@@ -5,7 +5,7 @@ desktop_files_creator_sources = [
 
 desktop_files_creator_deps = [
   dependency('gio-2.0', version: '>= 2.50'),
-  dependency('gtk4', version: '>= 4.4.2'),
+  dependency('gtk4', version: '>= 4.6.0'),
   dependency('libadwaita-1', version: '>= 1.0.0'),
 ]
 
