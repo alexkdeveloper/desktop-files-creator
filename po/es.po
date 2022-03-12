@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop-files-creator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 16:02+0100\n"
-"PO-Revision-Date: 2022-02-01 16:02+0100\n"
+"POT-Creation-Date: 2022-03-10 16:24+0100\n"
+"PO-Revision-Date: 2022-03-10 16:25+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
 #: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
-#: src/window.ui:257
+#: src/window.ui:13
 msgid "Desktop Files Creator"
 msgstr "Creador de archivos de escritorio"
 
@@ -30,14 +30,14 @@ msgid "Simple app for create a desktop files"
 msgstr "Aplicación sencilla para crear archivos de escritorio"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
-msgid "Develop;"
-msgstr "Develop;Desarrollo;"
+msgid "Desktop;File;Creator;"
+msgstr "Desktop;File;Creator;Escritorio;Archivo;Creador;"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
 msgid "Simple app for create a desktop files on GNU/Linux"
 msgstr "Aplicación sencilla para crear archivos de escritorio en GNU/Linux"
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:9
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:10
 msgid ""
 "The application allows you to create desktop files in GNU/Linux "
 "distributions."
@@ -45,54 +45,154 @@ msgstr ""
 "La aplicación permite crear archivos de escritorio en distribuciones GNU/"
 "Linux."
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:28
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:52
+msgid "Port to GTK4 + libadwaita"
+msgstr "Portado a GTK4 + libadwaita"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:59
+msgid "A small update to the user interface"
+msgstr "Una pequeña actualización de la interfaz de usuario"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:66
+msgid "Updated user interface"
+msgstr "Interfaz de usuario actualizada"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:67
+msgid "Added Slovak translation"
+msgstr "Añadida la traducción al eslovaco"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:74
+msgid "Port to libhandy"
+msgstr "Portado a libhandy"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:75
+msgid "Added Spanish translation"
+msgstr "Añadida la traducción al español"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:82
 msgid "Added Italian translation"
 msgstr "Añadida la traducción al italiano"
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:35
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:89
 msgid "Update to GNOME Platform version 41"
 msgstr "Actualización a la versión 41 de GNOME Platform"
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:36
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:90
 msgid "Added Czech translation"
 msgstr "Añadida la traducción al checo"
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:43
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:97
 msgid "Initial release"
 msgstr "Versión inicial"
 
-#: src/window.ui:35
+#: src/window.ui:21
+msgid "Open"
+msgstr "Abrir"
+
+#: src/window.ui:22
+msgid "Open Desktop Files Folder"
+msgstr "Abrir la carpeta de archivos del escritorio"
+
+#: src/window.ui:30
+msgid "Create Desktop File"
+msgstr "Crear archivo de escritorio"
+
+#: src/window.ui:60
 msgid "Name:"
 msgstr "Nombre:"
 
-#: src/window.ui:72
+#: src/window.ui:96
 msgid "Exec:"
 msgstr "Ejecutar:"
 
-#: src/window.ui:109
+#: src/window.ui:132
 msgid "Icon:"
 msgstr "Icono:"
 
-#: src/window.ui:146
+#: src/window.ui:168
 msgid "Categories:"
 msgstr "Categorías:"
 
-#: src/window.ui:183
+#: src/window.ui:204
 msgid "Comment:"
 msgstr "Comentario:"
 
-#: src/window.ui:212
+#: src/window.ui:229
 msgid "NoDisplay"
 msgstr "Sin pantalla"
 
-#: src/window.ui:226
+#: src/window.ui:242
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/window.ui:240
-msgid "CREATE"
-msgstr "CREAR"
+#: src/window.vala:74
+msgid ""
+"Error!\n"
+"Path "
+msgstr ""
+"¡Error!\n"
+"¡La ruta "
 
-#: src/window.ui:264
-msgid "Open Folder"
-msgstr "Abrir carpeta"
+#: src/window.vala:74
+msgid ""
+" is not exists!\n"
+"The program will not be able to perform its functions."
+msgstr ""
+" no existe!\n"
+"El programa no podrá realizar sus funciones."
+
+#: src/window.vala:85
+msgid "Open File"
+msgstr "Abrir archivo"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Open"
+msgstr "_Abrir"
+
+#: src/window.vala:98
+msgid "Open Image"
+msgstr "Abrir imagen"
+
+#: src/window.vala:120
+msgid "Enter the name"
+msgstr "Introduzca el nombre"
+
+#: src/window.vala:126
+msgid "A file with the same name already exists"
+msgstr "Ya existe un archivo con el mismo nombre"
+
+#: src/window.vala:130
+msgid "Create file "
+msgstr "¿Crear archivo "
+
+#: src/window.vala:130
+msgid " ?"
+msgstr " ?"
+
+#: src/window.vala:131
+msgid "Create"
+msgstr "Crear"
+
+#: src/window.vala:176
+msgid "File "
+msgstr "¡El archivo "
+
+#: src/window.vala:176
+msgid ""
+" is created!\n"
+"Path: "
+msgstr ""
+" ha sido creado!\n"
+"Ruta: "
+
+#: src/window.vala:178
+msgid "Error! Could not create file"
+msgstr "¡Error! No se pudo crear el archivo"
+
+#: src/window.vala:184
+msgid "Message"
+msgstr "Mensaje"
