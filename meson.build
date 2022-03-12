@@ -13,6 +13,7 @@ config_h_dir = include_directories('.')
 conf = configuration_data()
 conf.set_quoted('GETTEXT_PACKAGE', meson.project_name())
 conf.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+conf.set10('DEVELOPMENT', get_option('development'))
 configure_file(output: 'config.h', configuration: conf)
 
 subdir('data')

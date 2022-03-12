@@ -29,6 +29,9 @@
             "name" : "desktop-files-creator",
             "builddir" : true,
             "buildsystem" : "meson",
+            "config-opts" : [
+                "-Ddevelopment=true"
+            ],
             "sources" : [
                 {
                     "type" : "dir",
