@@ -105,7 +105,7 @@ msgstr "Введите название"
 
 #: src/window.vala:126
 msgid "A file with the same name already exists"
-msgstr "Файл с таим именем уже существует"
+msgstr "Файл с таким именем уже существует"
 
 #: src/window.vala:130
 msgid "Create file "
