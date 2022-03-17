@@ -61,7 +61,7 @@ msgstr "Комментарий:"
 
 #: src/window.ui:234
 msgid "NoDisplay"
-msgstr "Отображать в меню"
+msgstr "Не отображать в меню"
 
 #: src/window.ui:247
 msgid "Terminal"
