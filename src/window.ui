@@ -26,8 +26,13 @@
             </child>
             <child type="end">
               <object class="GtkButton" id="button_create">
-                <property name="icon-name">document-new-symbolic</property>
-                <property name="tooltip-text" translatable="yes">Create Desktop File</property>
+                <property name="child">
+                  <object class="AdwButtonContent">
+                   <property name="icon-name">document-new-symbolic</property>
+                   <property name="label" translatable="yes">Create</property>
+                   <property name="tooltip-text" translatable="yes">Create Desktop File</property>
+                 </object>
+               </property>
               </object>
             </child>
           </object>
