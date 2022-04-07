@@ -1,0 +1,123 @@
+# Swedish translations for desktop-files-creator package.
+# Copyright (C) 2022 THE desktop-files-creator'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop-files-creator package.
+# Åke Engelbrektson <eson@svenskasprakfiler.se>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-files-creator 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/alexkdeveloper/desktop-files-"
+"creatorSupport\n"
+"POT-Creation-Date: 2021-09-23 01:51+0400\n"
+"PO-Revision-Date: 2022-04-05 15:59+0200\n"
+"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
+"Language-Team: Svenska Språkfiler <contactform@svenskasprakfiler.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: src/window.ui:22
+msgid "Open folder"
+msgstr "Öppna mapp"
+
+#: src/window.ui:29
+msgid "Create file"
+msgstr "Skapa fil"
+
+#: src/window.ui:79
+msgid "Name:"
+msgstr "Namn:"
+
+#: src/window.ui:130
+msgid "Exec:"
+msgstr "Kör:"
+
+#: src/window.ui:179
+msgid "Icon:"
+msgstr "Ikon:"
+
+#: src/window.ui:228
+msgid "Categories:"
+msgstr "Kategorier:"
+
+#: src/window.ui:277
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: src/window.ui:326
+msgid "NoDisplay"
+msgstr "Ingen visning"
+
+#: src/window.ui:375
+msgid "Terminal"
+msgstr "Terminal"
+
+#: src/window.vala:74
+msgid ""
+"Error!\n"
+"Path "
+msgstr ""
+"Fel!\n"
+"Sökväg "
+
+#: src/window.vala:74
+msgid ""
+" is not exists!\n"
+"The program will not be able to perform its functions."
+msgstr ""
+" finns inte!\n"
+"Programmet kommer inte att kunna utföra sina funktioner."
+
+#: src/window.vala:85
+msgid "Open File"
+msgstr "Öppna fil"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Open"
+msgstr "_Öppna"
+
+#: src/window.vala:98
+msgid "Open Image"
+msgstr "Öppna bild"
+
+#: src/window.vala:120
+msgid "Enter the name"
+msgstr "Ange namn"
+
+#: src/window.vala:126
+msgid "A file with the same name already exists"
+msgstr "Det finns redan en fil med samma namn."
+
+#: src/window.vala:130
+msgid "Create file "
+msgstr "Skapa fil "
+
+#: src/window.vala:130
+msgid " ?"
+msgstr " ?"
+
+#: src/window.vala:176
+msgid "File "
+msgstr "Arkiv "
+
+#: src/window.vala:176
+msgid ""
+" is created!\n"
+"Path: "
+msgstr ""
+" skapades!\n"
+"Sökväg: "
+
+#: src/window.vala:178
+msgid "Error! Could not create file"
+msgstr "Fel! Kunde inte skapa filen."
+
+#: src/window.vala:184
+msgid "Message"
+msgstr "Meddelande"
