@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the desktop-files-creator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-files-creator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-28 12:29+0200\n"
+"PO-Revision-Date: 2022-04-29 18:01+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
+#: src/window.ui:13
+msgid "Desktop Files Creator"
+msgstr "Verwijzingsmaker"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:4
+msgid "Simple app for create a desktop files"
+msgstr ""
+"Een eenvoudige toepassing voor het maken van .desktop-bestanden"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
+msgid "Desktop;File;Creator;"
+msgstr "Desktop;Bestand;Maker;"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
+msgid "Simple app for create a desktop files on GNU/Linux"
+msgstr ""
+"Een eenvoudige toepassing voor het maken van .desktop-bestanden "
+"op GNU/Linux"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:10
+msgid ""
+"The application allows you to create desktop files in GNU/Linux "
+"distributions."
+msgstr ""
+"Met deze toepassing kunt u .desktop-bestanden maken op GNU/"
+"Linux-distributies."
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:21
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: src/window.ui:21
+msgid "Open"
+msgstr "Openen"
+
+#: src/window.ui:22
+msgid "Open Desktop Files Folder"
+msgstr "Open de map met .desktop-bestanden"
+
+#: src/window.ui:32 src/window.vala:131
+msgid "Create"
+msgstr "Maken"
+
+#: src/window.ui:33
+msgid "Create Desktop File"
+msgstr "Maak een .desktop-bestand"
+
+#: src/window.ui:65
+msgid "Name:"
+msgstr "Naam:"
+
+#: src/window.ui:101
+msgid "Exec:"
+msgstr "Opdracht:"
+
+#: src/window.ui:137
+msgid "Icon:"
+msgstr "Pictogram:"
+
+#: src/window.ui:173
+msgid "Categories:"
+msgstr "Categorieën:"
+
+#: src/window.ui:209
+msgid "Comment:"
+msgstr "Opmerking:"
+
+#: src/window.ui:234
+msgid "NoDisplay"
+msgstr "Niet tonen"
+
+#: src/window.ui:247
+msgid "Terminal"
+msgstr "Terminalvenster"
+
+#: src/window.vala:74
+msgid ""
+"Error!\n"
+"Path "
+msgstr ""
+"Foutmelding!\n"
+"De locatie "
+
+#: src/window.vala:74
+msgid ""
+" is not exists!\n"
+"The program will not be able to perform its functions."
+msgstr ""
+" bestaat niet.\n"
+"De toepassing kan hierdoor niet worden uitgevoerd."
+
+#: src/window.vala:85
+msgid "Open File"
+msgstr "Bestand openen"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Open"
+msgstr "_Openen"
+
+#: src/window.vala:98
+msgid "Open Image"
+msgstr "Afbeelding openen"
+
+#: src/window.vala:120
+msgid "Enter the name"
+msgstr "Voer een naam in"
+
+#: src/window.vala:126
+msgid "A file with the same name already exists"
+msgstr "Er is al een bestand met deze naam"
+
+#: src/window.vala:130
+msgid "Create file "
+msgstr "Wilt u "
+
+#: src/window.vala:130
+msgid " ?"
+msgstr " aanmaken?"
+
+#: src/window.vala:176
+msgid "File "
+msgstr "Het bestand "
+
+#: src/window.vala:176
+msgid ""
+" is created!\n"
+"Path: "
+msgstr ""
+" is aangemaakt!\n"
+"Locatie: "
+
+#: src/window.vala:178
+msgid "Error! Could not create file"
+msgstr "Foutmelding: het bestand kan niet worden aangemaakt"
+
+#: src/window.vala:184
+msgid "Message"
+msgstr "Bericht"
