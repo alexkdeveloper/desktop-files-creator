@@ -58,7 +58,7 @@ msgid ""
 " is not exists!\n"
 "Program nebude moci plnit své funkce."
 msgstr ""
-" neexistuje!\n"
+" neexistuje!"
 ""
 
 #: src/window.vala:85
