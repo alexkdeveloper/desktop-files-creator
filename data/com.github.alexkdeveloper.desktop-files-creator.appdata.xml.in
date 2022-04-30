@@ -46,6 +46,14 @@
   <translation type="gettext">com.github.alexkdeveloper.desktop-files-creator</translation>
 
   <releases>
+     <release version="1.0.9" date="2022-04-30">
+      <description>
+        <ul>
+          <li>Added Dutch translation</li>
+	  <li>Update Czech translation</li>
+        </ul>
+      </description>
+    </release>
      <release version="1.0.8" date="2022-04-08">
       <description>
         <ul>
