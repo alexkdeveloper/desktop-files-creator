@@ -45,10 +45,74 @@ msgstr "Nezobrazovat na obrazovce"
 msgid "Terminal"
 msgstr "Otevřít v terminálu"
 
-#: src/window.ui:240
-msgid "CREATE"
-msgstr "VYTVOŘIT"
+#: src/window.vala:74
+msgid ""
+"Error!\n"
+"Path "
+msgstr ""
+"Chyba!\n"
+"Cesta "
 
-#: src/window.ui:264
-msgid "open folder"
-msgstr "Otevřít složku"
+#: src/window.vala:74
+msgid ""
+" is not exists!\n"
+"Program nebude moci plnit své funkce."
+msgstr ""
+" neexistuje!\n"
+""
+
+#: src/window.vala:85
+msgid "Open File"
+msgstr "Otevřít soubor"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: src/window.vala:85 src/window.vala:98
+msgid "_Open"
+msgstr "_Otevřít"
+
+#: src/window.vala:98
+msgid "Open Image"
+msgstr "Otevřít obrázek"
+
+#: src/window.vala:120
+msgid "Enter the name"
+msgstr "Zadejte název"
+
+#: src/window.vala:126
+msgid "A file with the same name already exists"
+msgstr "Soubor se stejným názvem již existuje"
+
+#: src/window.vala:130
+msgid "Create file "
+msgstr "Vytvořit soubor"
+
+#: src/window.vala:130
+msgid " ?"
+msgstr " ?"
+
+#: src/window.vala:131
+msgid "Create"
+msgstr "Vytvořit"
+
+#: src/window.vala:176
+msgid "File "
+msgstr "Soubor "
+
+#: src/window.vala:176
+msgid ""
+" is created!\n"
+"Path: "
+msgstr ""
+" je vytvořen!\n"
+"Cesta: "
+
+#: src/window.vala:178
+msgid "Error! Could not create file"
+msgstr "Nastala chyba! Soubor není možné vytvořit"
+
+#: src/window.vala:184
+msgid "Message"
+msgstr "Zpráva"
