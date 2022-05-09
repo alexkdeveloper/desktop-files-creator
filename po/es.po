@@ -118,11 +118,11 @@ msgid "Comment:"
 msgstr "Comentario:"
 
 #: src/window.ui:229
-msgid "NoDisplay"
+msgid "Not displayed in the menu"
 msgstr "Sin pantalla"
 
 #: src/window.ui:242
-msgid "Terminal"
+msgid "Run in the terminal"
 msgstr "Terminal"
 
 #: src/window.vala:74

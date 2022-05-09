@@ -47,11 +47,11 @@ msgid "Comment:"
 msgstr "Kommentar:"
 
 #: src/window.ui:326
-msgid "NoDisplay"
+msgid "Not displayed in the menu"
 msgstr "Ingen visning"
 
 #: src/window.ui:375
-msgid "Terminal"
+msgid "Run in the terminal"
 msgstr "Terminal"
 
 #: src/window.vala:74

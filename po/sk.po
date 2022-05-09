@@ -38,11 +38,11 @@ msgid "Comment:"
 msgstr "Popisok:"
 
 #: src/window.ui:212
-msgid "NoDisplay"
+msgid "Not displayed in the menu"
 msgstr "Nezobrazovať na obrazovke"
 
 #: src/window.ui:226
-msgid "Terminal"
+msgid "Run in the terminal"
 msgstr "Otvoriť v termináli"
 
 #: src/window.ui:240

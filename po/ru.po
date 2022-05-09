@@ -60,11 +60,11 @@ msgid "Comment:"
 msgstr "Комментарий:"
 
 #: src/window.ui:234
-msgid "NoDisplay"
+msgid "Not displayed in the menu"
 msgstr "Не отображать в меню"
 
 #: src/window.ui:247
-msgid "Terminal"
+msgid "Run in the terminal"
 msgstr "Запускать в терминале"
 
 #: src/window.vala:74

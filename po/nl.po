@@ -89,11 +89,11 @@ msgid "Comment:"
 msgstr "Opmerking:"
 
 #: src/window.ui:234
-msgid "NoDisplay"
+msgid "Not displayed in the menu"
 msgstr "Niet tonen"
 
 #: src/window.ui:247
-msgid "Terminal"
+msgid "Run in the terminal"
 msgstr "Terminalvenster"
 
 #: src/window.vala:74
