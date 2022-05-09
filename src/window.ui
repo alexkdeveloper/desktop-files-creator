@@ -231,7 +231,7 @@
                     </child>
                     <child>
                       <object class="AdwActionRow">
-                        <property name="title" translatable="yes">NoDisplay</property>
+                        <property name="title" translatable="yes">Not displayed in the menu</property>
                         <property name="selectable">False</property>
                         <property name="focusable">False</property>
                         <child>
@@ -244,7 +244,7 @@
                     </child>
                     <child>
                       <object class="AdwActionRow">
-                        <property name="title" translatable="yes">Terminal</property>
+                        <property name="title" translatable="yes">Run in the terminal</property>
                         <property name="selectable">False</property>
                         <property name="focusable">False</property>
                         <child>
