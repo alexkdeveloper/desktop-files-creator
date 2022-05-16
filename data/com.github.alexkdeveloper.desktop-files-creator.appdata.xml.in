@@ -23,7 +23,6 @@
   <url type="homepage">http://github.com/alexkdeveloper/desktop-files-creator</url>
   <url type="bugtracker">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
   <url type="help">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
-  <url type="donation">https://www.blockchain.com/btc/address/bc1ql3ga4w9jtmxfe3pt8vfzydfd3zfpzks8hu5qfu</url>
 
   <screenshots>
     <screenshot type="default">
@@ -46,11 +45,18 @@
   <translation type="gettext">com.github.alexkdeveloper.desktop-files-creator</translation>
 
   <releases>
+    <release version="1.1.0" date="2022-05-16">
+      <description>
+        <ul>
+	        <li>Update English translation</li>
+        </ul>
+      </description>
+    </release>
      <release version="1.0.9" date="2022-04-30">
       <description>
         <ul>
           <li>Added Dutch translation</li>
-	  <li>Update Czech translation</li>
+	        <li>Update Czech translation</li>
         </ul>
       </description>
     </release>
