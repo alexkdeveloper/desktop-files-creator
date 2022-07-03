@@ -38,6 +38,8 @@
           </object>
         </child>
         <child>
+          <object class="AdwToastOverlay" id="overlay">
+          <property name="child">
           <object class="GtkScrolledWindow">
             <property name="propagate_natural_height">True</property>
             <property name="propagate_natural_width">True</property>
@@ -262,7 +264,9 @@
                 </child>
               </object>
             </child>
-          </object>
+           </object>
+          </property>
+         </object>
         </child>
       </object>
     </child>

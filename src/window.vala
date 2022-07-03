@@ -37,6 +37,8 @@ namespace DesktopFilesCreator {
         unowned Gtk.Button button_open;
         [GtkChild]
         unowned Gtk.Button button_create;
+        [GtkChild]
+        unowned Adw.ToastOverlay overlay;
 
         private string directory_path;
 
@@ -117,7 +119,7 @@ namespace DesktopFilesCreator {
 
         private void on_create_file (){
             if(is_empty(entry_name.get_text())){
-                alert(_("Enter the name"));
+                set_toast(_("Enter the name"));
                 entry_name.grab_focus();
                 return;
             }
@@ -177,6 +179,12 @@ Categories="+entry_categories.get_text().strip();
             }else{
                 alert(_("Error! Could not create file"));
             }
+        }
+
+        private void set_toast (string str){
+            var toast = new Adw.Toast (str);
+            toast.set_timeout (3);
+            overlay.add_toast (toast);
         }
 
         private void alert (string str){
