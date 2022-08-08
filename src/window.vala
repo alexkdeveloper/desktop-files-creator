@@ -20,15 +20,25 @@ namespace DesktopFilesCreator {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/desktop-files-creator/window.ui")]
 	public class Window : Adw.ApplicationWindow {
 		[GtkChild]
-		unowned Gtk.Entry entry_name;
+		unowned Adw.EntryRow entry_name;
+		[GtkChild]
+		unowned Gtk.Button clear_name;
         [GtkChild]
-        unowned Gtk.Entry entry_exec;
+        unowned Adw.EntryRow entry_exec;
         [GtkChild]
-        unowned Gtk.Entry entry_icon;
+        unowned Gtk.Button button_exec;
         [GtkChild]
-        unowned Gtk.Entry entry_categories;
+        unowned Adw.EntryRow entry_icon;
         [GtkChild]
-        unowned Gtk.Entry entry_comment;
+        unowned Gtk.Button button_icon;
+        [GtkChild]
+        unowned Adw.EntryRow entry_categories;
+        [GtkChild]
+        unowned Gtk.Button clear_categories;
+        [GtkChild]
+        unowned Adw.EntryRow entry_comment;
+        [GtkChild]
+        unowned Gtk.Button clear_comment;
         [GtkChild]
         unowned Gtk.Switch switch_no_display;
         [GtkChild]
@@ -44,32 +54,28 @@ namespace DesktopFilesCreator {
 
 		public Window (Adw.Application app) {
 			Object (application: app);
-			entry_name.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-			entry_name.icon_press.connect ((pos, event) => {
-                entry_name.set_text("");
-                entry_name.grab_focus();
+            entry_name.changed.connect((event) => {
+                on_entry_change(entry_name, clear_name);
             });
-            entry_exec.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
-		    entry_exec.icon_press.connect ((pos, event) => {
-                on_open_exec();
+            clear_name.clicked.connect((event) => {
+                on_clear_entry(entry_name);
             });
-            entry_icon.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
-			entry_icon.icon_press.connect ((pos, event) => {
-			    on_open_icon();
+            button_exec.clicked.connect(on_open_exec);
+            button_icon.clicked.connect(on_open_icon);
+            entry_categories.changed.connect((event) => {
+                on_entry_change(entry_categories, clear_categories);
             });
-            entry_categories.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-            entry_categories.icon_press.connect ((pos, event) => {
-                entry_categories.set_text ("");
-                entry_categories.grab_focus();
+            clear_categories.clicked.connect((event) => {
+                on_clear_entry(entry_categories);
             });
-            entry_comment.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-            entry_comment.icon_press.connect ((pos, event) => {
-                entry_comment.set_text ("");
-                entry_comment.grab_focus();
+            entry_comment.changed.connect((event) => {
+                on_entry_change(entry_comment, clear_comment);
+            });
+            clear_comment.clicked.connect((event) => {
+                on_clear_entry(entry_comment);
             });
             button_open.clicked.connect(on_open_directory);
             button_create.clicked.connect(on_create_file);
-	        entry_name.grab_focus();
             directory_path = Environment.get_home_dir()+"/.local/share/applications";
             GLib.File file = GLib.File.new_for_path(directory_path);
             if(!file.query_exists()){
@@ -82,6 +88,19 @@ namespace DesktopFilesCreator {
                 add_css_class ("devel");
             }
 		}
+
+        private void on_clear_entry(Adw.EntryRow entry){
+            entry.set_text("");
+            entry.grab_focus();
+        }
+
+        private void on_entry_change(Adw.EntryRow entry, Gtk.Button clear){
+            if (!is_empty(entry.get_text())) {
+                clear.set_visible(true);
+            } else {
+                clear.set_visible(false);
+            }
+        }
 
 		private void on_open_exec(){
             var file_chooser = new Gtk.FileChooserDialog (_("Open File"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
