@@ -26,6 +26,53 @@
     ],
     "modules" : [
         {
+            "name": "libsass",
+            "sources": [
+                {
+                    "type" : "archive",
+                    "url" : "https://github.com/sass/libsass/archive/3.6.5.tar.gz",
+                    "sha256": "89d8f2c46ae2b1b826b58ce7dde966a176bac41975b82e84ad46b01a55080582"
+                },
+                {
+                    "type" : "script",
+                    "dest-filename" : "autogen.sh",
+                    "commands" : [ "autoreconf -si" ]
+                }
+            ]
+        },
+        {
+            "name": "sassc",
+            "sources": [
+                {
+                    "type" : "archive",
+                    "url" : "https://github.com/sass/sassc/archive/3.6.2.tar.gz",
+                    "sha256": "608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03"
+                },
+                {
+                    "type" : "script",
+                    "dest-filename" : "autogen.sh",
+                    "commands" : [ "autoreconf -si" ]
+                }
+            ]
+        },
+        {
+            "name" : "libadwaita",
+            "buildsystem": "meson",
+            "config-opts" : [
+                "-Dvapi=true",
+                "-Dgtk_doc=false",
+                "-Dexamples=false",
+                "-Dtests=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "branch" : "main"
+                }
+            ]
+        },
+        {
             "name" : "desktop-files-creator",
             "builddir" : true,
             "buildsystem" : "meson",
