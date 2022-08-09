@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop-files-creator\n"
-"POT-Creation-Date: 2022-03-17 15:53+0800\n"
-"PO-Revision-Date: 2022-03-17 15:54+0800\n"
+"POT-Creation-Date: 2022-08-09 10:44+0800\n"
+"PO-Revision-Date: 2022-08-09 17:06+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: src\n"
 "X-Poedit-SearchPath-1: data/com.github.alexkdeveloper.desktop-files-creator."
@@ -19,55 +19,55 @@ msgstr ""
 "X-Poedit-SearchPath-2: data/com.github.alexkdeveloper.desktop-files-creator."
 "desktop.in\n"
 
-#: src/window.ui:13
+#: src/window.ui:11
 msgid "Desktop Files Creator"
 msgstr ""
 
-#: src/window.ui:21
+#: src/window.ui:19
 msgid "Open"
 msgstr "Открыть"
 
-#: src/window.ui:22
+#: src/window.ui:20
 msgid "Open Desktop Files Folder"
 msgstr "Открыть папку с файлами"
 
-#: src/window.ui:32 src/window.vala:131
+#: src/window.ui:30 src/window.vala:152
 msgid "Create"
 msgstr "Создать"
 
-#: src/window.ui:33
+#: src/window.ui:31
 msgid "Create Desktop File"
 msgstr "Создать файл"
 
-#: src/window.ui:65
-msgid "Name:"
-msgstr "Название:"
+#: src/window.ui:54
+msgid "Name"
+msgstr "Название"
 
-#: src/window.ui:101
-msgid "Exec:"
-msgstr "Исполняемый файл:"
+#: src/window.ui:70
+msgid "Exec"
+msgstr "Исполняемый файл"
 
-#: src/window.ui:137
-msgid "Icon:"
-msgstr "Иконка приложения:"
+#: src/window.ui:84
+msgid "Icon"
+msgstr "Иконка приложения"
 
-#: src/window.ui:173
-msgid "Categories:"
-msgstr "Категории:"
+#: src/window.ui:98
+msgid "Categories"
+msgstr "Категории"
 
-#: src/window.ui:209
-msgid "Comment:"
-msgstr "Комментарий:"
+#: src/window.ui:114
+msgid "Comment"
+msgstr "Комментарий"
 
-#: src/window.ui:234
-msgid "Not displayed in the menu"
-msgstr "Не отображать в меню"
+#: src/window.ui:130
+msgid "Not Displayed in Menu"
+msgstr "Не Отображать в Меню"
 
-#: src/window.ui:247
-msgid "Run in the terminal"
-msgstr "Запускать в терминале"
+#: src/window.ui:143
+msgid "Run in Terminal"
+msgstr "Запускать в Терминале"
 
-#: src/window.vala:74
+#: src/window.vala:82
 msgid ""
 "Error!\n"
 "Path "
@@ -75,7 +75,7 @@ msgstr ""
 "Ошибка!\n"
 "Путь "
 
-#: src/window.vala:74
+#: src/window.vala:82
 msgid ""
 " is not exists!\n"
 "The program will not be able to perform its functions."
@@ -83,52 +83,52 @@ msgstr ""
 " не существует!\n"
 "Программа не сможет выполнять свои функции."
 
-#: src/window.vala:85
+#: src/window.vala:106
 msgid "Open File"
 msgstr "Открыть файл"
 
-#: src/window.vala:85 src/window.vala:98
+#: src/window.vala:106 src/window.vala:119
 msgid "_Cancel"
 msgstr "_Отмена"
 
-#: src/window.vala:85 src/window.vala:98
+#: src/window.vala:106 src/window.vala:119
 msgid "_Open"
 msgstr "_Открыть"
 
-#: src/window.vala:98
+#: src/window.vala:119
 msgid "Open Image"
 msgstr "Открыть изображение"
 
-#: src/window.vala:120
+#: src/window.vala:141
 msgid "Enter the name"
 msgstr "Введите название"
 
-#: src/window.vala:126
+#: src/window.vala:147
 msgid "A file with the same name already exists"
 msgstr "Файл с таким именем уже существует"
 
-#: src/window.vala:130
+#: src/window.vala:151
 msgid "Create file "
 msgstr "Создать файл "
 
-#: src/window.vala:130
+#: src/window.vala:151
 msgid " ?"
 msgstr ""
 
-#: src/window.vala:176
+#: src/window.vala:197
 msgid "File "
 msgstr "Файл "
 
-#: src/window.vala:176
+#: src/window.vala:197
 msgid ""
 " is created!\n"
 "Path: "
 msgstr " создан! Путь: "
 
-#: src/window.vala:178
+#: src/window.vala:199
 msgid "Error! Could not create file"
 msgstr "Ошибка! Не получилось создать файл"
 
-#: src/window.vala:184
+#: src/window.vala:211
 msgid "Message"
 msgstr "Сообщение"
