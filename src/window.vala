@@ -79,7 +79,7 @@ namespace DesktopFilesCreator {
             directory_path = Environment.get_home_dir()+"/.local/share/applications";
             GLib.File file = GLib.File.new_for_path(directory_path);
             if(!file.query_exists()){
-                alert(_("Error!\nPath ")+directory_path+_(" is not exists!\nThe program will not be able to perform its functions."));
+                alert(_("Error!\nPath: %s does not exist!".printf(directory_path)), _("The program will not be able to perform its functions."));
                 button_create.set_sensitive(false);
                 button_open.set_sensitive(false);
             }
@@ -144,15 +144,19 @@ namespace DesktopFilesCreator {
             }
             GLib.File file = GLib.File.new_for_path(directory_path+"/"+entry_name.get_text().strip()+".desktop");
             if(file.query_exists()){
-                alert(_("A file with the same name already exists"));
+                alert(_("A file with the same name already exists"), "");
                 entry_name.grab_focus();
                 return;
             }
-            var dialog_create_desktop_file = new Gtk.MessageDialog(this,Gtk.DialogFlags.MODAL,Gtk.MessageType.QUESTION, Gtk.ButtonsType.OK_CANCEL, _("Create file ")+file.get_basename()+_(" ?"));
-            dialog_create_desktop_file.set_title(_("Create"));
+            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file %s ?".printf(file.get_basename())), "");
+            dialog_create_desktop_file.add_response("cancel", _("_Cancel"));
+            dialog_create_desktop_file.add_response("ok", _("_OK"));
+            dialog_create_desktop_file.set_default_response("ok");
+            dialog_create_desktop_file.set_close_response("cancel");
+            dialog_create_desktop_file.set_response_appearance("ok", SUGGESTED);
             dialog_create_desktop_file.show();
             dialog_create_desktop_file.response.connect((response) => {
-                if (response == Gtk.ResponseType.OK) {
+                if (response == "ok") {
                     create_desktop_file();
                 }
                 dialog_create_desktop_file.close();
@@ -194,9 +198,9 @@ Categories="+entry_categories.get_text().strip();
             }
             GLib.File file = GLib.File.new_for_path(path);
             if(file.query_exists()) {
-                alert(_("File ")+file.get_basename()+_(" is created!\nPath: ")+path);
+                alert(_("File %s is created!".printf(file.get_basename())), _("Path: %s".printf(path)));
             }else{
-                alert(_("Error! Could not create file"));
+                alert(_("Error! Could not create file"), "");
             }
         }
 
@@ -206,9 +210,13 @@ Categories="+entry_categories.get_text().strip();
             overlay.add_toast (toast);
         }
 
-        private void alert (string str){
-            var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-            dialog_alert.set_title(_("Message"));
+        private void alert (string heading, string body){
+            var dialog_alert = new Adw.MessageDialog(this, heading, body);
+            if (body != "") {
+                dialog_alert.set_body(body);
+            }
+            dialog_alert.add_response("ok", _("_OK"));
+            dialog_alert.set_response_appearance("ok", SUGGESTED);
             dialog_alert.response.connect((_) => { dialog_alert.close(); });
             dialog_alert.show();
         }
