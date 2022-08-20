@@ -154,7 +154,7 @@ msgstr "Commento"
 
 #: src/window.ui:130
 msgid "Not Displayed in Menu"
-msgstr "Non mostrare nella grigli"
+msgstr "Non mostrare nella griglia"
 
 #: src/window.ui:143
 msgid "Run in Terminal"
