@@ -1,0 +1,213 @@
+# Turkish translation of com.github.alexkdeveloper.desktop-files-creator.
+# Copyright (C) 2022 com.github.alexkdeveloper.desktop-files-creator COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.alexkdeveloper.desktop-files-creator package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alexkdeveloper.desktop-files-creator master\n"
+"Report-Msgid-Bugs-To: https://github.com/alexkdeveloper/desktop-files-"
+"creator/issues\n"
+"POT-Creation-Date: 2022-08-22 09:30+0300\n"
+"PO-Revision-Date: 2022-08-22 09:32+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: src\n"
+"X-Poedit-SearchPath-1: data\n"
+
+# Desktop burada dosyanın uzantısı olduğu için, kafa karıştırmamak için uygulama genelinde çevrilmemiştir.
+#: src/window.ui:11
+msgid "Desktop Files Creator"
+msgstr "Desktop Dosyaları Oluşturucu"
+
+#: src/window.ui:19
+msgid "Open"
+msgstr "Aç"
+
+#: src/window.ui:20
+msgid "Open Desktop Files Folder"
+msgstr "Desktop Dosyaları Klasörünü Aç"
+
+#: src/window.ui:30
+msgid "Create"
+msgstr "Oluştur"
+
+#: src/window.ui:31
+msgid "Create Desktop File"
+msgstr "Desktop Dosyası Oluştur"
+
+#: src/window.ui:54
+msgid "Name"
+msgstr "Ad"
+
+#: src/window.ui:70
+msgid "Exec"
+msgstr "Komut"
+
+#: src/window.ui:84
+msgid "Icon"
+msgstr "Simge"
+
+#: src/window.ui:98
+msgid "Categories"
+msgstr "Kategori"
+
+#: src/window.ui:114
+msgid "Comment"
+msgstr "Yorum"
+
+#: src/window.ui:130
+msgid "Not Displayed in Menu"
+msgstr "Menüde Gösterme"
+
+#: src/window.ui:143
+msgid "Run in Terminal"
+msgstr "Uçbirimde Çalıştır"
+
+#: src/window.vala:82
+msgid ""
+"Error!\n"
+"Path: "
+msgstr ""
+"Hata!\n"
+"Yok: "
+
+#: src/window.vala:82
+msgid " does not exist!"
+msgstr " yok!"
+
+#: src/window.vala:82
+msgid "The program will not be able to perform its functions."
+msgstr "Program işlevlerini yerine getiremez."
+
+#: src/window.vala:106
+msgid "Open File"
+msgstr "Dosya Aç"
+
+#: src/window.vala:106 src/window.vala:119 src/window.vala:152
+msgid "_Cancel"
+msgstr "İptal _Et"
+
+#: src/window.vala:106 src/window.vala:119
+msgid "_Open"
+msgstr "_Aç"
+
+#: src/window.vala:119
+msgid "Open Image"
+msgstr "Görüntü Aç"
+
+#: src/window.vala:141
+msgid "Enter the name"
+msgstr "Adı giriniz"
+
+#: src/window.vala:147
+msgid "A file with the same name already exists"
+msgstr "Aynı adla bir dosya zaten var"
+
+#: src/window.vala:151
+msgid "Create file "
+msgstr "Dosya oluştur "
+
+#: src/window.vala:153 src/window.vala:218
+msgid "_OK"
+msgstr "_Tamam"
+
+#: src/window.vala:201
+msgid "File "
+msgstr "Dosya "
+
+#: src/window.vala:201
+msgid " is created!"
+msgstr " oluşturuldu!"
+
+#: src/window.vala:201
+msgid "Path: "
+msgstr "Yol: "
+
+#: src/window.vala:203
+msgid "Error! Could not create file"
+msgstr "Hata! Dosya oluşturulamadı"
+
+msgid "Simple app for create a desktop files"
+msgstr "Desktop dosyaları oluşturmak için basit bir uygulama"
+
+msgid "Desktop;File;Creator;"
+msgstr "Desktop;Masaüstü;Dosya;Oluştur;"
+
+msgid "Simple app for create a desktop files on GNU/Linux"
+msgstr "GNU/Linux'ta desktop dosyaları oluşturmak için basit bir uygulama"
+
+msgid ""
+"The application allows you to create desktop files in GNU/Linux "
+"distributions."
+msgstr ""
+"Uygulama, GNU/Linux dağıtımlarında desktop dosyaları oluşturmanıza olanak "
+"tanır."
+
+msgid "Update Italian translation"
+msgstr "İtalyanca çeviri güncellendi"
+
+msgid "Port to AdwMessageDialog"
+msgstr "AdwMessageDialog'a güncellendi"
+
+msgid "Port to AdwEntryRow"
+msgstr "AdwEntryRow'a güncellendi"
+
+msgid "Pop-up messages were introduced"
+msgstr "Açılır pencere iletiler eklendi"
+
+msgid "Update English translation"
+msgstr "İngilizce çeviri güncellendi"
+
+msgid "Added Dutch translation"
+msgstr "Flemenkçe çeviri eklendi"
+
+msgid "Update Czech translation"
+msgstr "Çekçe çeviri güncellendi"
+
+msgid "Added Swedish translation"
+msgstr "İsveççe çeviri eklendi"
+
+msgid "Added Russian translation"
+msgstr "Rusça çeviri eklendi"
+
+msgid "Update Spanish translation"
+msgstr "İspanyolca çeviri güncellendi"
+
+msgid "Port to GTK4 + libadwaita"
+msgstr "GTK4 + libadwaita'ya güncellendi"
+
+msgid "A small update to the user interface"
+msgstr "Kullanıcı arayüzünde küçük bir güncelleme"
+
+msgid "Updated user interface"
+msgstr "Kullanıcı arayüzü güncellendi"
+
+msgid "Added Slovak translation"
+msgstr "Slovakça çeviri eklendi"
+
+msgid "Port to libhandy"
+msgstr "libhandy'ye güncellendi"
+
+msgid "Added Spanish translation"
+msgstr "İspanyolca çeviri eklendi"
+
+msgid "Added Italian translation"
+msgstr "İtalyanca çeviri eklendi"
+
+msgid "Update to GNOME Platform version 41"
+msgstr "GNOME Platformu 41 sürümüne güncellendi"
+
+msgid "Added Czech translation"
+msgstr "Çekçe çeviri eklendi"
+
+msgid "Initial release"
+msgstr "İlk sürüm"
