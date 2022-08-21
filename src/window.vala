@@ -148,7 +148,7 @@ namespace DesktopFilesCreator {
                 entry_name.grab_focus();
                 return;
             }
-            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file %s ?".printf(file.get_basename())), "");
+            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file %s?".printf(file.get_basename())), "");
             dialog_create_desktop_file.add_response("cancel", _("_Cancel"));
             dialog_create_desktop_file.add_response("ok", _("_OK"));
             dialog_create_desktop_file.set_default_response("ok");
