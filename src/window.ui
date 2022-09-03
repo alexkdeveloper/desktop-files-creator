@@ -77,6 +77,17 @@
                             </style>
                           </object>
                         </child>
+                        <child>
+                          <object class="GtkButton" id="clear_exec">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
                       </object>
                     </child>
                     <child>
@@ -87,6 +98,17 @@
                             <property name="icon-name">folder-open-symbolic</property>
                             <property name="valign">center</property>
                             <style>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="clear_icon">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
                               <class name="circular"/>
                             </style>
                           </object>

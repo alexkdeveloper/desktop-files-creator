@@ -27,10 +27,14 @@ namespace DesktopFilesCreator {
         unowned Adw.EntryRow entry_exec;
         [GtkChild]
         unowned Gtk.Button button_exec;
+		[GtkChild]
+		unowned Gtk.Button clear_exec;
         [GtkChild]
         unowned Adw.EntryRow entry_icon;
         [GtkChild]
         unowned Gtk.Button button_icon;
+		[GtkChild]
+		unowned Gtk.Button clear_icon;
         [GtkChild]
         unowned Adw.EntryRow entry_categories;
         [GtkChild]
@@ -61,7 +65,19 @@ namespace DesktopFilesCreator {
                 on_clear_entry(entry_name);
             });
             button_exec.clicked.connect(on_open_exec);
+		    entry_exec.changed.connect((event) => {
+                on_entry_change(entry_exec, clear_exec);
+            });
+            clear_exec.clicked.connect((event) => {
+                on_clear_entry(entry_exec);
+            });
             button_icon.clicked.connect(on_open_icon);
+		    entry_icon.changed.connect((event) => {
+                on_entry_change(entry_icon, clear_icon);
+            });
+            clear_icon.clicked.connect((event) => {
+                on_clear_entry(entry_icon);
+            });
             entry_categories.changed.connect((event) => {
                 on_entry_change(entry_categories, clear_categories);
             });
@@ -96,8 +112,18 @@ namespace DesktopFilesCreator {
 
         private void on_entry_change(Adw.EntryRow entry, Gtk.Button clear){
             if (!is_empty(entry.get_text())) {
+                if (entry == entry_exec) {
+                    button_exec.set_visible(false);
+                } else if (entry == entry_icon) {
+                    button_icon.set_visible(false);
+                }
                 clear.set_visible(true);
             } else {
+                if (entry == entry_exec) {
+                    button_exec.set_visible(true);
+                } else if (entry == entry_icon) {
+                    button_icon.set_visible(true);
+                }
                 clear.set_visible(false);
             }
         }
