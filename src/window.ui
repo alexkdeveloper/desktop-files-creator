@@ -130,6 +130,7 @@
                         <property name="title" translatable="yes">Not Displayed in Menu</property>
                         <property name="selectable">False</property>
                         <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_no_display</property>
                         <child>
                           <object class="GtkSwitch" id="switch_no_display">
                             <property name="halign">end</property>
@@ -143,6 +144,7 @@
                         <property name="title" translatable="yes">Run in Terminal</property>
                         <property name="selectable">False</property>
                         <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_terminal</property>
                         <child>
                           <object class="GtkSwitch" id="switch_terminal">
                             <property name="halign">end</property>
