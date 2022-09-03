@@ -49,7 +49,7 @@
       <description>
         <ul>
 	  <li>Update Spanish translation</li>
-          <li>Added activatable switch rows and clear buttons for exec and icon rows</li>
+          <li>Added clear buttons to exec and icon rows</li>
         </ul>
       </description>
     </release>
