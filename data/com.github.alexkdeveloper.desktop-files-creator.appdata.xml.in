@@ -45,6 +45,13 @@
   <translation type="gettext">com.github.alexkdeveloper.desktop-files-creator</translation>
 
   <releases>
+    <release version="1.1.7" date="2022-09-07">
+      <description>
+        <ul>
+	  <li>Added the ability to select svg files for the application icon</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.6" date="2022-09-03">
       <description>
         <ul>
