@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Desktop Files Creator
-Comment=Simple app for create a desktop files
+Comment=Simple app for creating desktop files
 GenericName=Desktop Files Creator
 Exec=desktop-files-creator
 Icon=com.github.alexkdeveloper.desktop-files-creator

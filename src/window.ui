@@ -77,6 +77,17 @@
                             </style>
                           </object>
                         </child>
+                        <child>
+                          <object class="GtkButton" id="clear_exec">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
                       </object>
                     </child>
                     <child>
@@ -87,6 +98,17 @@
                             <property name="icon-name">folder-open-symbolic</property>
                             <property name="valign">center</property>
                             <style>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="clear_icon">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
                               <class name="circular"/>
                             </style>
                           </object>
@@ -130,6 +152,7 @@
                         <property name="title" translatable="yes">Not Displayed in Menu</property>
                         <property name="selectable">False</property>
                         <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_no_display</property>
                         <child>
                           <object class="GtkSwitch" id="switch_no_display">
                             <property name="halign">end</property>
@@ -143,6 +166,7 @@
                         <property name="title" translatable="yes">Run in Terminal</property>
                         <property name="selectable">False</property>
                         <property name="focusable">False</property>
+                        <property name="activatable-widget">switch_terminal</property>
                         <child>
                           <object class="GtkSwitch" id="switch_terminal">
                             <property name="halign">end</property>

@@ -27,10 +27,14 @@ namespace DesktopFilesCreator {
         unowned Adw.EntryRow entry_exec;
         [GtkChild]
         unowned Gtk.Button button_exec;
+		[GtkChild]
+		unowned Gtk.Button clear_exec;
         [GtkChild]
         unowned Adw.EntryRow entry_icon;
         [GtkChild]
         unowned Gtk.Button button_icon;
+		[GtkChild]
+		unowned Gtk.Button clear_icon;
         [GtkChild]
         unowned Adw.EntryRow entry_categories;
         [GtkChild]
@@ -61,7 +65,19 @@ namespace DesktopFilesCreator {
                 on_clear_entry(entry_name);
             });
             button_exec.clicked.connect(on_open_exec);
+		    entry_exec.changed.connect((event) => {
+                on_entry_change(entry_exec, clear_exec);
+            });
+            clear_exec.clicked.connect((event) => {
+                on_clear_entry(entry_exec);
+            });
             button_icon.clicked.connect(on_open_icon);
+		    entry_icon.changed.connect((event) => {
+                on_entry_change(entry_icon, clear_icon);
+            });
+            clear_icon.clicked.connect((event) => {
+                on_clear_entry(entry_icon);
+            });
             entry_categories.changed.connect((event) => {
                 on_entry_change(entry_categories, clear_categories);
             });
@@ -79,7 +95,7 @@ namespace DesktopFilesCreator {
             directory_path = Environment.get_home_dir()+"/.local/share/applications";
             GLib.File file = GLib.File.new_for_path(directory_path);
             if(!file.query_exists()){
-                alert(_("Error!\nPath: %s does not exist!".printf(directory_path)), _("The program will not be able to perform its functions."));
+                alert(_("Error!\nPath: ")+directory_path+_(" does not exist!"), _("The program will not be able to perform its functions."));
                 button_create.set_sensitive(false);
                 button_open.set_sensitive(false);
             }
@@ -96,8 +112,18 @@ namespace DesktopFilesCreator {
 
         private void on_entry_change(Adw.EntryRow entry, Gtk.Button clear){
             if (!is_empty(entry.get_text())) {
+                if (entry == entry_exec) {
+                    button_exec.set_visible(false);
+                } else if (entry == entry_icon) {
+                    button_icon.set_visible(false);
+                }
                 clear.set_visible(true);
             } else {
+                if (entry == entry_exec) {
+                    button_exec.set_visible(true);
+                } else if (entry == entry_icon) {
+                    button_icon.set_visible(true);
+                }
                 clear.set_visible(false);
             }
         }
@@ -122,6 +148,7 @@ namespace DesktopFilesCreator {
             file_chooser.set_filter (filter);
             filter.add_mime_type ("image/jpeg");
             filter.add_mime_type ("image/png");
+            filter.add_mime_type ("image/svg+xml");
             file_chooser.response.connect((response) => {
                 if (response == Gtk.ResponseType.ACCEPT) {
                     entry_icon.set_text(file_chooser.get_file().get_path());
@@ -148,7 +175,7 @@ namespace DesktopFilesCreator {
                 entry_name.grab_focus();
                 return;
             }
-            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file %s ?".printf(file.get_basename())), "");
+            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file ")+file.get_basename()+"?", "");
             dialog_create_desktop_file.add_response("cancel", _("_Cancel"));
             dialog_create_desktop_file.add_response("ok", _("_OK"));
             dialog_create_desktop_file.set_default_response("ok");
@@ -198,7 +225,7 @@ Categories="+entry_categories.get_text().strip();
             }
             GLib.File file = GLib.File.new_for_path(path);
             if(file.query_exists()) {
-                alert(_("File %s is created!".printf(file.get_basename())), _("Path: %s".printf(path)));
+                alert(_("File ")+file.get_basename()+(_(" is created!")), _("Path: ")+path);
             }else{
                 alert(_("Error! Could not create file"), "");
             }
