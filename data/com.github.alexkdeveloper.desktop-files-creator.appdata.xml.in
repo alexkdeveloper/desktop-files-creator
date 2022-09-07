@@ -49,6 +49,7 @@
       <description>
         <ul>
 	  <li>Added the ability to select svg files for the application icon</li>
+	  <li>Update Italian translation</li>
         </ul>
       </description>
     </release>
