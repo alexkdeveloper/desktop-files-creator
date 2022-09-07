@@ -148,6 +148,7 @@ namespace DesktopFilesCreator {
             file_chooser.set_filter (filter);
             filter.add_mime_type ("image/jpeg");
             filter.add_mime_type ("image/png");
+            filter.add_mime_type ("image/svg+xml");
             file_chooser.response.connect((response) => {
                 if (response == Gtk.ResponseType.ACCEPT) {
                     entry_icon.set_text(file_chooser.get_file().get_path());
