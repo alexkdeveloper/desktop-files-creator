@@ -68,7 +68,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "branch" : "main"
+                    "branch" : "libadwaita-1-2"
                 }
             ]
         },
