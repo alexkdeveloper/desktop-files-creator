@@ -1,6 +1,6 @@
 # Desktop Files Creator
 
-Simple app for create a desktop files on GNU/Linux
+Simple app for creating .desktop files on GNU/Linux
 
 ![screenshot.png](/screenshot.png)
 
