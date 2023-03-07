@@ -37,6 +37,7 @@
         </child>
         <child>
           <object class="AdwToastOverlay" id="overlay">
+          <property name="vexpand">True</property>
           <property name="child">
           <object class="GtkScrolledWindow">
             <property name="propagate_natural_height">True</property>
