@@ -129,34 +129,47 @@ namespace DesktopFilesCreator {
         }
 
 		private void on_open_exec(){
-            var file_chooser = new Gtk.FileChooserNative (_("Open File"), this, Gtk.FileChooserAction.OPEN,null,null);
-            file_chooser.set_modal(true);
-            file_chooser.response.connect((response) => {
-                if (response == Gtk.ResponseType.ACCEPT) {
-                    entry_exec.set_text(file_chooser.get_file().get_path());
+            var filechooser = new Gtk.FileDialog () {
+                title = _("Open File"),
+                modal = true
+            };
+            filechooser.open.begin (this, null, (obj, res) => {
+                try {
+                    var file = filechooser.open.end (res);
+                    if (file == null) {
+                        return;
+                    }
+                    entry_exec.text = file.get_path ();
+                } catch (Error e) {
+                    warning ("Failed to select executable file: %s", e.message);
                 }
             });
-
-            file_chooser.show();
         }
 
         private void on_open_icon () {
-            var file_chooser = new Gtk.FileChooserNative (_("Open Image"), this, Gtk.FileChooserAction.OPEN,null,null);
-            file_chooser.set_modal(true);
-            Gtk.FileFilter filter = new Gtk.FileFilter ();
-            file_chooser.set_filter (filter);
+            var filter = new Gtk.FileFilter ();
             filter.add_mime_type ("image/jpeg");
             filter.add_mime_type ("image/png");
             filter.add_mime_type ("image/svg+xml");
             filter.add_mime_type ("image/x-xpixmap");
             filter.add_mime_type ("image/vnd.microsoft.icon");
-            file_chooser.response.connect((response) => {
-                if (response == Gtk.ResponseType.ACCEPT) {
-                    entry_icon.set_text(file_chooser.get_file().get_path());
+
+            var filechooser = new Gtk.FileDialog () {
+                title = _("Open Image"),
+                modal = true,
+                default_filter = filter
+            };
+            filechooser.open.begin (this, null, (obj, res) => {
+                try {
+                    var file = filechooser.open.end (res);
+                    if (file == null) {
+                        return;
+                    }
+                    entry_icon.text = file.get_path ();
+                } catch (Error e) {
+                    warning ("Failed to select icon file: %s", e.message);
                 }
             });
-
-            file_chooser.show();
        }
 
         private void on_open_directory() {
