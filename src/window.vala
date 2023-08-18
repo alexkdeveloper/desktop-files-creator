@@ -128,7 +128,7 @@ namespace DesktopFilesCreator {
             }
         }
 
-		private void on_open_exec(){
+	private void on_open_exec(){
             var filechooser = new Gtk.FileDialog () {
                 title = _("Open File"),
                 modal = true
