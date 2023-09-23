@@ -6,6 +6,7 @@
         <property name="orientation">vertical</property>
         <child>
           <object class="AdwHeaderBar" id="header_bar">
+            <property name="css-classes">flat</property>
             <property name="title-widget">
               <object class="AdwWindowTitle">
                 <property name="title" translatable="yes">Desktop Files Creator</property>

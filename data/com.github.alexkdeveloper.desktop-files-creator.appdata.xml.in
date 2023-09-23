@@ -45,6 +45,13 @@
   <translation type="gettext">com.github.alexkdeveloper.desktop-files-creator</translation>
 
   <releases>
+    <release version="1.2.4" date="2023-09-23">
+      <description>
+        <ul>
+	  <li>Updated to GNOME Platform version 45</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.2.3" date="2023-08-18">
       <description>
         <ul>
