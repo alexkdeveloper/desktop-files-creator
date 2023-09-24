@@ -17,75 +17,76 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/window.ui:35
+#: src/window.ui:54
 msgid "Name:"
 msgstr "Název:"
 
-#: src/window.ui:72
+#: src/window.ui:70
 msgid "Exec:"
 msgstr "Příkaz:"
 
-#: src/window.ui:109
+#: src/window.ui:84
 msgid "Icon:"
 msgstr "Ikona:"
 
-#: src/window.ui:146
+#: src/window.ui:98
 msgid "Categories:"
 msgstr "Kategorie:"
 
-#: src/window.ui:183
+#: src/window.ui:114
 msgid "Comment:"
-msgstr "Popisek:"
+msgstr "Popis:"
 
-#: src/window.ui:212
+#: src/window.ui:130
 msgid "Not displayed in the menu"
-msgstr "Nezobrazovat na obrazovce"
+msgstr "Nezobrazovat v nabídce"
 
-#: src/window.ui:226
+#: src/window.ui:143
 msgid "Run in the terminal"
 msgstr "Otevřít v terminálu"
 
-#: src/window.vala:74
+#: src/window.vala:82
 msgid ""
 "Error!\n"
-"Path "
+"Path: "
 msgstr ""
 "Chyba!\n"
-"Cesta "
+"Umíštění: "
 
 #: src/window.vala:74
 msgid ""
-" is not exists!\n"
-"Program nebude moci plnit své funkce."
-msgstr ""
-" neexistuje!"
-""
+" does not exist!\n"
+msgstr " neexistuje!"
 
-#: src/window.vala:85
+#: src/window.vala:82
+msgid "The program will not be able to perform its functions."
+msgstr "Program nebude moci splnit svoji funkci."
+
+#: src/window.vala:106
 msgid "Open File"
 msgstr "Otevřít soubor"
 
-#: src/window.vala:85 src/window.vala:98
+#: src/window.vala:106 src/window.vala:119 src/window.vala:152
 msgid "_Cancel"
 msgstr "_Zrušit"
 
-#: src/window.vala:85 src/window.vala:98
+#: src/window.vala:106 src/window.vala:119
 msgid "_Open"
 msgstr "_Otevřít"
 
-#: src/window.vala:98
+#: src/window.vala:119
 msgid "Open Image"
 msgstr "Otevřít obrázek"
 
-#: src/window.vala:120
+#: src/window.vala:141
 msgid "Enter the name"
 msgstr "Zadejte název"
 
-#: src/window.vala:126
+#: src/window.vala:147
 msgid "A file with the same name already exists"
 msgstr "Soubor se stejným názvem již existuje"
 
-#: src/window.vala:130
+#: src/window.vala:151
 msgid "Create file "
 msgstr "Vytvořit soubor"
 
@@ -93,26 +94,20 @@ msgstr "Vytvořit soubor"
 msgid " ?"
 msgstr " ?"
 
-#: src/window.vala:131
+#: src/window.ui:30
 msgid "Create"
 msgstr "Vytvořit"
 
-#: src/window.vala:176
+#: src/window.vala:201
 msgid "File "
 msgstr "Soubor "
 
-#: src/window.vala:176
+#: src/window.vala:201
 msgid ""
 " is created!\n"
 "Path: "
-msgstr ""
-" je vytvořen!\n"
-"Cesta: "
+msgstr "Umíštění: "
 
-#: src/window.vala:178
+#: src/window.vala:203
 msgid "Error! Could not create file"
 msgstr "Nastala chyba! Soubor není možné vytvořit"
-
-#: src/window.vala:184
-msgid "Message"
-msgstr "Zpráva"
