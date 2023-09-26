@@ -56,7 +56,7 @@ msgstr ""
 #: src/window.vala:74
 msgid ""
 " does not exist!\n"
-msgstr " neexistuje!"
+msgstr " neexistuje!\n"
 
 #: src/window.vala:82
 msgid "The program will not be able to perform its functions."
