@@ -95,7 +95,7 @@ namespace DesktopFilesCreator {
             directory_path = Environment.get_home_dir()+"/.local/share/applications";
             GLib.File file = GLib.File.new_for_path(directory_path);
             if(!file.query_exists()){
-                alert(_("Error!\nPath: ")+directory_path+_(" does not exist!"), _("The program will not be able to perform its functions."));
+                alert(_("Error!\nPath: %s does not exist!\nThe program will not be able to perform its functions.").printf(directory_path), "");
                 button_create.set_sensitive(false);
                 button_open.set_sensitive(false);
             }
@@ -188,7 +188,7 @@ namespace DesktopFilesCreator {
                 entry_name.grab_focus();
                 return;
             }
-            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file ")+file.get_basename()+"?", "");
+            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file %s?").printf(file.get_basename()), "");
             dialog_create_desktop_file.add_response("cancel", _("_Cancel"));
             dialog_create_desktop_file.add_response("ok", _("_OK"));
             dialog_create_desktop_file.set_default_response("ok");
@@ -238,7 +238,7 @@ Categories="+entry_categories.get_text().strip();
             }
             GLib.File file = GLib.File.new_for_path(path);
             if(file.query_exists()) {
-                alert(_("File ")+file.get_basename()+(_(" is created!")), _("Path: ")+path);
+                alert(_("File %s is created!\nPath: %s").printf(file.get_basename(), path), "");
             }else{
                 alert(_("Error! Could not create file"), "");
             }
