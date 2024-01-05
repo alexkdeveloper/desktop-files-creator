@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 17:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
+#: src/window.ui:12
+msgid "Desktop Files Creator"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:4
+msgid "Simple app for creating desktop files"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
+msgid "Desktop;File;Creator;"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
+msgid "Simple app for creating desktop files on GNU/Linux"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:10
+msgid ""
+"The application allows you to create desktop files in GNU/Linux "
+"distributions."
+msgstr ""
+
+#: src/window.ui:20
+msgid "Open"
+msgstr ""
+
+#: src/window.ui:21
+msgid "Open Desktop Files Folder"
+msgstr ""
+
+#: src/window.ui:31
+msgid "Create"
+msgstr ""
+
+#: src/window.ui:32
+msgid "Create Desktop File"
+msgstr ""
+
+#: src/window.ui:56
+msgid "Name"
+msgstr ""
+
+#: src/window.ui:72
+msgid "Exec"
+msgstr ""
+
+#: src/window.ui:97
+msgid "Icon"
+msgstr ""
+
+#: src/window.ui:122
+msgid "Categories"
+msgstr ""
+
+#: src/window.ui:138
+msgid "Comment"
+msgstr ""
+
+#: src/window.ui:154
+msgid "Not Displayed in Menu"
+msgstr ""
+
+#: src/window.ui:168
+msgid "Run in Terminal"
+msgstr ""
+
+#: src/window.vala:98
+#, c-format
+msgid ""
+"Error!\n"
+"Path: %s does not exist!\n"
+"The program will not be able to perform its functions."
+msgstr ""
+
+#: src/window.vala:133
+msgid "Open File"
+msgstr ""
+
+#: src/window.vala:158
+msgid "Open Image"
+msgstr ""
+
+#: src/window.vala:181
+msgid "Enter the name"
+msgstr ""
+
+#: src/window.vala:187
+msgid "A file with the same name already exists"
+msgstr ""
+
+#: src/window.vala:191
+#, c-format
+msgid "Create file %s?"
+msgstr ""
+
+#: src/window.vala:192
+msgid "_Cancel"
+msgstr ""
+
+#: src/window.vala:193 src/window.vala:258
+msgid "_OK"
+msgstr ""
+
+#: src/window.vala:241
+#, c-format
+msgid ""
+"File %s is created!\n"
+"Path: %s"
+msgstr ""
+
+#: src/window.vala:243
+msgid "Error! Could not create file"
+msgstr ""
