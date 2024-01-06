@@ -1,5 +1,4 @@
 data/com.github.alexkdeveloper.desktop-files-creator.desktop.in
 data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in
-data/com.github.alexkdeveloper.desktop-files-creator.gschema.xml
 src/window.ui
 src/window.vala

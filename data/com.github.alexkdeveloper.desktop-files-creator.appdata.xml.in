@@ -10,19 +10,17 @@
     <p>The application allows you to create desktop files in GNU/Linux distributions.</p>
   </description>
 
-  <categories>
-    <category>Utility</category>
-  </categories>
-
   <provides>
     <binary>com.github.alexkdeveloper.desktop-files-creator</binary>
   </provides>
 
   <developer_name translatable="no">Alex Kryuchkov</developer_name>
 
-  <url type="homepage">http://github.com/alexkdeveloper/desktop-files-creator</url>
-  <url type="bugtracker">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
-  <url type="help">http://github.com/alexkdeveloper/desktop-files-creator/issues</url>
+  <url type="homepage">https://github.com/alexkdeveloper/desktop-files-creator</url>
+  <url type="bugtracker">https://github.com/alexkdeveloper/desktop-files-creator/issues</url>
+  <url type="vcs-browser">https://github.com/alexkdeveloper/desktop-files-creator</url>
+  <url type="translate">https://github.com/alexkdeveloper/desktop-files-creator/tree/main/po</url>
+  <url type="help">https://github.com/alexkdeveloper/desktop-files-creator/issues</url>
 
   <screenshots>
     <screenshot type="default">
@@ -43,66 +41,67 @@
   </requires>
 
   <translation type="gettext">com.github.alexkdeveloper.desktop-files-creator</translation>
+  <launchable type="desktop-id">com.github.alexkdeveloper.desktop-files-creator.desktop</launchable>
 
   <releases>
     <release version="1.2.5" date="2023-09-26">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Updated Czech translation</li>
         </ul>
       </description>
     </release>
     <release version="1.2.4" date="2023-09-23">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Updated to GNOME Platform version 45</li>
         </ul>
       </description>
     </release>
     <release version="1.2.3" date="2023-08-18">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Port to FileDialog</li>
         </ul>
       </description>
     </release>
     <release version="1.2.2" date="2023-03-22">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Updated to GNOME Platform version 44</li>
         </ul>
       </description>
     </release>
     <release version="1.2.1" date="2023-03-07">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Fixed UI</li>
         </ul>
       </description>
     </release>
     <release version="1.2.0" date="2022-11-10">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Added additional icon types for the selection window</li>
         </ul>
       </description>
     </release>
     <release version="1.1.9" date="2022-11-07">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Port to FileChooserNative</li>
         </ul>
       </description>
     </release>
     <release version="1.1.8" date="2022-09-24">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Update to GNOME Platform version 43</li>
         </ul>
       </description>
     </release>
     <release version="1.1.7" date="2022-09-07">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Added the ability to select svg files for the application icon</li>
 	  <li>Update Italian translation</li>
@@ -110,7 +109,7 @@
       </description>
     </release>
     <release version="1.1.6" date="2022-09-03">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Update Spanish translation</li>
           <li>Added clear buttons to exec and icon rows</li>
@@ -118,7 +117,7 @@
       </description>
     </release>
     <release version="1.1.5" date="2022-08-22">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Update Russian translation</li>
           <li>Added Turkish translation</li>
@@ -126,42 +125,42 @@
       </description>
     </release>
     <release version="1.1.4" date="2022-08-20">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Update Italian translation</li>
         </ul>
       </description>
     </release>
     <release version="1.1.3" date="2022-08-12">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Port to AdwMessageDialog</li>
         </ul>
       </description>
     </release>
     <release version="1.1.2" date="2022-08-09">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Port to AdwEntryRow</li>
         </ul>
       </description>
     </release>
     <release version="1.1.1" date="2022-07-03">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Pop-up messages were introduced</li>
         </ul>
       </description>
     </release>
     <release version="1.1.0" date="2022-05-16">
-      <description>
+      <description translatable="no">
         <ul>
 	  <li>Update English translation</li>
         </ul>
       </description>
     </release>
      <release version="1.0.9" date="2022-04-30">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added Dutch translation</li>
 	  <li>Update Czech translation</li>
@@ -169,14 +168,14 @@
       </description>
     </release>
      <release version="1.0.8" date="2022-04-08">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added Swedish translation</li>
         </ul>
       </description>
     </release>
     <release version="1.0.7" date="2022-03-17">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added Russian translation</li>
           <li>Update Italian translation</li>
@@ -185,21 +184,21 @@
       </description>
     </release>
     <release version="1.0.6" date="2022-03-10">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Port to GTK4 + libadwaita</li>
         </ul>
       </description>
     </release>
     <release version="1.0.5" date="2022-02-16">
-      <description>
+      <description translatable="no">
         <ul>
           <li>A small update to the user interface</li>
         </ul>
       </description>
     </release>
     <release version="1.0.4" date="2022-02-14">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Updated user interface</li>
           <li>Added Slovak translation</li>
@@ -207,7 +206,7 @@
       </description>
     </release>
     <release version="1.0.3" date="2022-02-02">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Port to libhandy</li>
           <li>Added Spanish translation</li>
@@ -215,14 +214,14 @@
       </description>
     </release>
     <release version="1.0.2" date="2021-12-29">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Added Italian translation</li>
         </ul>
       </description>
     </release>
     <release version="1.0.1" date="2021-12-20">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Update to GNOME Platform version 41</li>
           <li>Added Czech translation</li>
@@ -230,7 +229,7 @@
       </description>
     </release>
     <release version="1.0.0" date="2021-09-19">
-      <description>
+      <description translatable="no">
         <ul>
           <li>Initial release</li>
         </ul>
