@@ -221,7 +221,6 @@ namespace DesktopFilesCreator {
                 terminal="false";
             }
             string desktop_file="[Desktop Entry]
-Encoding=UTF-8
 Type=Application
 NoDisplay="+display+"
 Terminal="+terminal+"
