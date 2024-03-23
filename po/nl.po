@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop-files-creator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-28 12:29+0200\n"
-"PO-Revision-Date: 2022-04-29 18:01+0200\n"
+"POT-Creation-Date: 2024-01-05 17:57+0300\n"
+"PO-Revision-Date: 2024-03-23 21:53+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -16,150 +16,151 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
 #: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
-#: src/window.ui:13
+#: src/window.ui:12
 msgid "Desktop Files Creator"
 msgstr "Verwijzingsmaker"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:4
-msgid "Simple app for create a desktop files"
-msgstr ""
-"Een eenvoudige toepassing voor het maken van .desktop-bestanden"
+msgid "Simple app for creating desktop files"
+msgstr "Een eenvoudige toepassing voor het maken van .desktop-bestanden"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
 msgid "Desktop;File;Creator;"
 msgstr "Desktop;Bestand;Maker;"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
-msgid "Simple app for create a desktop files on GNU/Linux"
+msgid "Simple app for creating desktop files on GNU/Linux"
 msgstr ""
-"Een eenvoudige toepassing voor het maken van .desktop-bestanden "
-"op GNU/Linux"
+"Een eenvoudige toepassing voor het maken van .desktop-bestanden op GNU/Linux"
 
 #: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:10
 msgid ""
 "The application allows you to create desktop files in GNU/Linux "
 "distributions."
 msgstr ""
-"Met deze toepassing kunt u .desktop-bestanden maken op GNU/"
-"Linux-distributies."
+"Met deze toepassing kunt u .desktop-bestanden maken op GNU/Linux-"
+"distributies."
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:21
-msgid "Alex Kryuchkov"
-msgstr "Alex Kryuchkov"
-
-#: src/window.ui:21
+#: src/window.ui:20
 msgid "Open"
 msgstr "Openen"
 
-#: src/window.ui:22
+#: src/window.ui:21
 msgid "Open Desktop Files Folder"
 msgstr "Open de map met .desktop-bestanden"
 
-#: src/window.ui:32 src/window.vala:131
+#: src/window.ui:31
 msgid "Create"
 msgstr "Maken"
 
-#: src/window.ui:33
+#: src/window.ui:32
 msgid "Create Desktop File"
 msgstr "Maak een .desktop-bestand"
 
-#: src/window.ui:65
-msgid "Name:"
-msgstr "Naam:"
+#: src/window.ui:56
+msgid "Name"
+msgstr "Naam"
 
-#: src/window.ui:101
-msgid "Exec:"
-msgstr "Opdracht:"
+#: src/window.ui:72
+msgid "Exec"
+msgstr "Opdracht"
 
-#: src/window.ui:137
-msgid "Icon:"
-msgstr "Pictogram:"
+#: src/window.ui:97
+msgid "Icon"
+msgstr "Pictogram"
 
-#: src/window.ui:173
-msgid "Categories:"
-msgstr "Categorieën:"
+#: src/window.ui:122
+msgid "Categories"
+msgstr "Categorieën"
 
-#: src/window.ui:209
-msgid "Comment:"
-msgstr "Opmerking:"
+#: src/window.ui:138
+msgid "Comment"
+msgstr "Opmerking"
 
-#: src/window.ui:234
-msgid "Not displayed in the menu"
-msgstr "Niet tonen"
+#: src/window.ui:154
+msgid "Not Displayed in Menu"
+msgstr "Niet in menu tonen"
 
-#: src/window.ui:247
-msgid "Run in the terminal"
-msgstr "Terminalvenster"
+#: src/window.ui:168
+msgid "Run in Terminal"
+msgstr "Uitvoeren in terminalvenster"
 
-#: src/window.vala:74
+#: src/window.vala:98
+#, c-format
 msgid ""
 "Error!\n"
-"Path "
-msgstr ""
-"Foutmelding!\n"
-"De locatie "
-
-#: src/window.vala:74
-msgid ""
-" is not exists!\n"
+"Path: %s does not exist!\n"
 "The program will not be able to perform its functions."
 msgstr ""
-" bestaat niet.\n"
+"Foutmelding!\n"
+"‘%s’ bestaat niet.\n"
 "De toepassing kan hierdoor niet worden uitgevoerd."
 
-#: src/window.vala:85
+#: src/window.vala:133
 msgid "Open File"
 msgstr "Bestand openen"
 
-#: src/window.vala:85 src/window.vala:98
-msgid "_Cancel"
-msgstr "_Annuleren"
-
-#: src/window.vala:85 src/window.vala:98
-msgid "_Open"
-msgstr "_Openen"
-
-#: src/window.vala:98
+#: src/window.vala:158
 msgid "Open Image"
 msgstr "Afbeelding openen"
 
-#: src/window.vala:120
+#: src/window.vala:181
 msgid "Enter the name"
 msgstr "Voer een naam in"
 
-#: src/window.vala:126
+#: src/window.vala:187
 msgid "A file with the same name already exists"
 msgstr "Er is al een bestand met deze naam"
 
-#: src/window.vala:130
-msgid "Create file "
-msgstr "Wilt u "
+#: src/window.vala:191
+#, c-format
+msgid "Create file %s?"
+msgstr "Wilt u ‘%s’ aanmaken?"
 
-#: src/window.vala:130
-msgid " ?"
-msgstr " aanmaken?"
+#: src/window.vala:192
+msgid "_Cancel"
+msgstr "_Annuleren"
 
-#: src/window.vala:176
-msgid "File "
-msgstr "Het bestand "
+#: src/window.vala:193 src/window.vala:258
+msgid "_OK"
+msgstr "_Oké"
 
-#: src/window.vala:176
+#: src/window.vala:241
+#, c-format
 msgid ""
-" is created!\n"
-"Path: "
+"File %s is created!\n"
+"Path: %s"
 msgstr ""
-" is aangemaakt!\n"
-"Locatie: "
+"‘%s’ is aangemaakt!\n"
+"Locatie: %s"
 
-#: src/window.vala:178
+#: src/window.vala:243
 msgid "Error! Could not create file"
 msgstr "Foutmelding: het bestand kan niet worden aangemaakt"
 
-#: src/window.vala:184
-msgid "Message"
-msgstr "Bericht"
+#~ msgid "Alex Kryuchkov"
+#~ msgstr "Alex Kryuchkov"
+
+#~ msgid ""
+#~ "Error!\n"
+#~ "Path "
+#~ msgstr ""
+#~ "Foutmelding!\n"
+#~ "De locatie "
+
+#~ msgid "_Open"
+#~ msgstr "_Openen"
+
+#~ msgid " ?"
+#~ msgstr " aanmaken?"
+
+#~ msgid "File "
+#~ msgstr "Het bestand "
+
+#~ msgid "Message"
+#~ msgstr "Bericht"
