@@ -1,16 +1,16 @@
-# Italian translations for desktop-files-creator package.
-# Copyright (C) 2022 THE desktop-files-creator'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the desktop-files-creator package.
-# Automatically generated, 2022.
+# ITALIAN TRANSLATION.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Albano Battistella <albanobattistella@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop-files-creator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-09 09:36+0200\n"
-"PO-Revision-Date: 2022-08-18 16:00+0200\n"
-"Last-Translator: musiclover382 <musiclover382@protonmail.com>\n"
-"Language-Team: none\n"
+"POT-Creation-Date:2024-01-05 17:57+0300\n"
+"PO-Revision-Date: 2024-03-23 11:10+0100\n"
+"Last-Translator: Albano Battistella <albanobattistella@gmail.com>\n"
+"Language-Team: Italian\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,186 +44,100 @@ msgstr ""
 "Questa applicazione permette di creare file desktop in distribuzioni GNU/"
 "Linux."
 
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:51
-msgid "Pop-up messages were introduced"
-msgstr "Aggiunta dei messaggi popup"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:58
-msgid "Update English translation"
-msgstr "Aggiornata traduzione Inglese"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:65
-msgid "Added Dutch translation"
-msgstr "Aggiunta traduzione olandese"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:66
-msgid "Update Czech translation"
-msgstr "Aggiornata traduzione ceca"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:73
-msgid "Added Swedish translation"
-msgstr "Aggiunta traduzione svedese"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:80
-msgid "Added Russian translation"
-msgstr "Aggiunta traduzione russa"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:81
-msgid "Update Italian translation"
-msgstr "Aggiornata traduzione italiana"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:82
-msgid "Update Spanish translation"
-msgstr "Aggiornata traduzione spagnola"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:89
-msgid "Port to GTK4 + libadwaita"
-msgstr "Conversione a GTK4 + libadwaita"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:96
-msgid "A small update to the user interface"
-msgstr "Un piccolo aggiornamento all'interfaccia grafica"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:103
-msgid "Updated user interface"
-msgstr "Aggiornamento interfaccia grafica"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:104
-msgid "Added Slovak translation"
-msgstr "Aggiunta traduzione slovacca"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:111
-msgid "Port to libhandy"
-msgstr "Conversione a libhandy"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:112
-msgid "Added Spanish translation"
-msgstr "Aggiunta traduzione spagnola"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:119
-msgid "Added Italian translation"
-msgstr "Aggiunta traduzione italiana"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:126
-msgid "Update to GNOME Platform version 41"
-msgstr "Aggiornamento alla piattaforma GNOME versione 41"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:127
-msgid "Added Czech translation"
-msgstr "Aggiunta traduzione ceca"
-
-#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:134
-msgid "Initial release"
-msgstr "Primo rilascio"
-
-#: src/window.ui:19
+#: src/window.ui:20
 msgid "Open"
 msgstr "Apri"
 
-#: src/window.ui:20
+#: src/window.ui:21
 msgid "Open Desktop Files Folder"
 msgstr "Apri la cartella dei file desktop"
 
-#: src/window.ui:30 src/window.vala:152
+#: src/window.ui:31
 msgid "Create"
 msgstr "Crea"
 
-#: src/window.ui:31
+#: src/window.ui:32
 msgid "Create Desktop File"
 msgstr "Crea file desktop"
 
-#: src/window.ui:54
+#: src/window.ui:56
 msgid "Name"
 msgstr "Nome"
 
-#: src/window.ui:70
+#: src/window.ui:72
 msgid "Exec"
 msgstr "Comando"
 
-#: src/window.ui:84
+#: src/window.ui:97
 msgid "Icon"
 msgstr "Icona"
 
-#: src/window.ui:98
+#: src/window.ui:122
 msgid "Categories"
 msgstr "Categorie"
 
-#: src/window.ui:114
+#: src/window.ui:138
 msgid "Comment"
 msgstr "Commento"
 
-#: src/window.ui:130
+#: src/window.ui:154
 msgid "Not Displayed in Menu"
-msgstr "Non mostrare nella griglia"
+msgstr "Non mostrare nel menu"
 
-#: src/window.ui:143
+#: src/window.ui:168
 msgid "Run in Terminal"
 msgstr "Avvia nel terminale"
 
-#: src/window.vala:82
+#: src/window.vala:98
+#, c-format
 msgid ""
 "Error!\n"
-"Path "
-msgstr ""
-"Errore!\n"
-"Il percorso "
-
-#: src/window.vala:82
-msgid ""
-" is not exists!\n"
+"Path: %s does not exist!\n"
 "The program will not be able to perform its functions."
 msgstr ""
-" non esiste!\n"
-"Il programma non funzionerà."
+"Errore!\n"
+"Percorso: %s non esiste!\n"
+"Il programma non sarà in grado di eseguire le sue funzioni."
 
-#: src/window.vala:106
+#: src/window.vala:133
 msgid "Open File"
 msgstr "Apri file"
 
-#: src/window.vala:106 src/window.vala:119
-msgid "_Cancel"
-msgstr "_Annulla"
-
-#: src/window.vala:106 src/window.vala:119
-msgid "_Open"
-msgstr "_Apri"
-
-#: src/window.vala:119
+#: src/window.vala:158
 msgid "Open Image"
 msgstr "Apri immagine"
 
-#: src/window.vala:141
+#: src/window.vala:181
 msgid "Enter the name"
 msgstr "Inserire il nome"
 
-#: src/window.vala:147
+#: src/window.vala:187
 msgid "A file with the same name already exists"
 msgstr "Esiste già un file con lo stesso nome"
 
-#: src/window.vala:151
-msgid "Create file "
-msgstr "Creare il file "
+#: src/window.vala:191
+#, c-format
+msgid "Create file %s?"
+msgstr "Creare il file %s?"
 
-#: src/window.vala:151
-msgid " ?"
-msgstr " ?"
+#: src/window.vala:192
+msgid "_Cancel"
+msgstr "Annulla"
 
-#: src/window.vala:197
-msgid "File "
-msgstr "Il file "
+#: src/window.vala:193 src/window.vala:258
+msgid "_OK"
+msgstr "_OK"
 
-#: src/window.vala:197
+#: src/window.vala:241
+#, c-format
 msgid ""
-" is created!\n"
-"Path: "
+"File %s is created!\n"
+"Path: %s"
 msgstr ""
-" è stato creato!\n"
-"Percorso: "
+"Il file %s è stato creato!\n"
+"Percorso: %s"
 
-#: src/window.vala:199
+#: src/window.vala:243
 msgid "Error! Could not create file"
 msgstr "Errore! Impossibile creare il file"
 
-#: src/window.vala:211
-msgid "Message"
-msgstr "Messaggio"
