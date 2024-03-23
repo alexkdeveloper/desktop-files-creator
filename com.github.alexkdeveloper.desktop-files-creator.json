@@ -1,7 +1,7 @@
 {
     "app-id" : "com.github.alexkdeveloper.desktop-files-creator",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "desktop-files-creator",
     "finish-args" : [

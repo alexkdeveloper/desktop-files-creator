@@ -188,13 +188,13 @@ namespace DesktopFilesCreator {
                 entry_name.grab_focus();
                 return;
             }
-            var dialog_create_desktop_file = new Adw.MessageDialog(this, _("Create file %s?").printf(file.get_basename()), "");
+            var dialog_create_desktop_file = new Adw.AlertDialog(_("Create file %s?").printf(file.get_basename()), "");
             dialog_create_desktop_file.add_response("cancel", _("_Cancel"));
             dialog_create_desktop_file.add_response("ok", _("_OK"));
             dialog_create_desktop_file.set_default_response("ok");
             dialog_create_desktop_file.set_close_response("cancel");
             dialog_create_desktop_file.set_response_appearance("ok", SUGGESTED);
-            dialog_create_desktop_file.show();
+            dialog_create_desktop_file.present(this);
             dialog_create_desktop_file.response.connect((response) => {
                 if (response == "ok") {
                     create_desktop_file();
@@ -250,14 +250,14 @@ Categories="+entry_categories.get_text().strip();
         }
 
         private void alert (string heading, string body){
-            var dialog_alert = new Adw.MessageDialog(this, heading, body);
+            var dialog_alert = new Adw.AlertDialog(heading, body);
             if (body != "") {
                 dialog_alert.set_body(body);
             }
             dialog_alert.add_response("ok", _("_OK"));
             dialog_alert.set_response_appearance("ok", SUGGESTED);
             dialog_alert.response.connect((_) => { dialog_alert.close(); });
-            dialog_alert.show();
+            dialog_alert.present(this);
         }
 	}
 }

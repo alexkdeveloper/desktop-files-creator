@@ -44,6 +44,13 @@
   <launchable type="desktop-id">com.github.alexkdeveloper.desktop-files-creator.desktop</launchable>
 
   <releases>
+    <release version="1.2.6" date="2024-03-23">
+      <description translatable="no">
+        <ul>
+	  <li>Updated to GNOME Platform version 46</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.2.5" date="2023-09-26">
       <description translatable="no">
         <ul>
