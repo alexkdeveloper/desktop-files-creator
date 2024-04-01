@@ -15,6 +15,9 @@
   </provides>
 
   <developer_name translate="no">Alex Kryuchkov</developer_name>
+  <developer id="io.github.alexkdeveloper">
+    <name translate="no">Alex Kryuchkov</name>
+  </developer>
 
   <url type="homepage">https://github.com/alexkdeveloper/desktop-files-creator</url>
   <url type="bugtracker">https://github.com/alexkdeveloper/desktop-files-creator/issues</url>
