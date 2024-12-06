@@ -1,0 +1,139 @@
+# German translation for desktop-files-creator package.
+# Copyright (C) 2024 - derVedro
+# This file is distributed under the same license as the package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: desktop-files-creator\n"
+"POT-Creation-Date: 2024-01-05 17:57+0300\n"
+"PO-Revision-Date: 2024-12-04 04:00+0100\n"
+"Last-Translator: derVedro\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
+#: src/window.ui:12
+msgid "Desktop Files Creator"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:4
+msgid "Simple app for creating desktop files"
+msgstr "Einfache Anwendung zur Erstellung der Desktop-Dateien"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
+msgid "Desktop;File;Creator;"
+msgstr "Desktop;Datei;Ersteller;"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
+msgid "Simple app for creating desktop files on GNU/Linux"
+msgstr "Einfache Anwendung zur Erstellung der .desktop-Dateien in GNU/Linux"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:10
+msgid ""
+"The application allows you to create desktop files in GNU/Linux "
+"distributions."
+msgstr "Die Anwendung ermöglicht es Ihnen, .desktop-Dateien in GNU/Linux-"
+"Distributionen zu erstellen."
+
+#: src/window.ui:20
+msgid "Open"
+msgstr "Öffnen"
+
+#: src/window.ui:21
+msgid "Open Desktop Files Folder"
+msgstr "Ordner mit .desktop-Dateien öffnen"
+
+#: src/window.ui:31
+msgid "Create"
+msgstr "Erstellen"
+
+#: src/window.ui:32
+msgid "Create Desktop File"
+msgstr ".desktop-Datei erstellen"
+
+#: src/window.ui:56
+msgid "Name"
+msgstr "Name"
+
+#: src/window.ui:72
+msgid "Exec"
+msgstr "Befehl"
+
+#: src/window.ui:97
+msgid "Icon"
+msgstr "Icon"
+
+#: src/window.ui:122
+msgid "Categories"
+msgstr "Kategorien"
+
+#: src/window.ui:138
+msgid "Comment"
+msgstr "Kommentar"
+
+#: src/window.ui:154
+msgid "Not Displayed in Menu"
+msgstr "Nicht im Menü anzeigen"
+
+#: src/window.ui:168
+msgid "Run in Terminal"
+msgstr "Im Terminal ausführen"
+
+#: src/window.vala:98
+#, c-format
+msgid ""
+"Error!\n"
+"Path: %s does not exist!\n"
+"The program will not be able to perform its functions."
+msgstr ""
+"Fehler!\n"
+"Pfad:%s existiert nicht!" 
+"Das Programm wird nicht seine Aufgabe erfüllen können."
+
+#: src/window.vala:133
+msgid "Open File"
+msgstr "Datei öffnen"
+
+#: src/window.vala:158
+msgid "Open Image"
+msgstr "Bild öffnen"
+
+#: src/window.vala:181
+msgid "Enter the name"
+msgstr "Gib den Namen ein"
+
+#: src/window.vala:187
+msgid "A file with the same name already exists"
+msgstr "Eine Datei mit disem Namen existiert bereits"
+
+#: src/window.vala:191
+#, c-format
+msgid "Create file %s?"
+msgstr "Datei %s erstellen?"
+
+#: src/window.vala:192
+msgid "_Cancel"
+msgstr "_Abbrechen"
+
+#: src/window.vala:193 src/window.vala:258
+msgid "_OK"
+msgstr "_OK"
+
+#: src/window.vala:241
+#, c-format
+msgid ""
+"File %s is created!\n"
+"Path: %s"
+msgstr ""
+"Datei %s wurde erstellt.\n"
+"Pfad: %s"
+
+#: src/window.vala:243
+msgid "Error! Could not create file"
+msgstr "Fehler! Datei konnte nicht erstellt werden"
