@@ -1,17 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop-files-creator\n"
-"POT-Creation-Date: 2022-08-22 10:40+0800\n"
-"PO-Revision-Date: 2022-08-22 10:50+0800\n"
-"Last-Translator: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-05 17:57+0300\n"
+"PO-Revision-Date: 2024-12-26 21:50+1000\n"
+"Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: src\n"
 "X-Poedit-SearchPath-1: data/com.github.alexkdeveloper.desktop-files-creator."
@@ -19,117 +20,147 @@ msgstr ""
 "X-Poedit-SearchPath-2: data/com.github.alexkdeveloper.desktop-files-creator."
 "desktop.in\n"
 
-#: src/window.ui:11
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:3
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:5
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:6
+#: src/window.ui:12
 msgid "Desktop Files Creator"
-msgstr ""
+msgstr "Desktop Files Creator"
 
-#: src/window.ui:19
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:4
+msgid "Simple app for creating desktop files"
+msgstr "Простое приложение для создания .desktop-файлов"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.desktop.in:11
+msgid "Desktop;File;Creator;"
+msgstr "Desktop;File;Creator;рабочий стол;файл;"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:7
+msgid "Simple app for creating desktop files on GNU/Linux"
+msgstr "Простое приложение для создания .desktop-файлов в GNU/Linux"
+
+#: data/com.github.alexkdeveloper.desktop-files-creator.appdata.xml.in:10
+msgid ""
+"The application allows you to create desktop files in GNU/Linux "
+"distributions."
+msgstr ""
+"Приложение позволяет создавать .desktop-файлы в дистрибутивах GNU/Linux."
+
+#: src/window.ui:20
 msgid "Open"
 msgstr "Открыть"
 
-#: src/window.ui:20
+#: src/window.ui:21
 msgid "Open Desktop Files Folder"
 msgstr "Открыть папку с файлами"
 
-#: src/window.ui:30
+#: src/window.ui:31
 msgid "Create"
 msgstr "Создать"
 
-#: src/window.ui:31
+#: src/window.ui:32
 msgid "Create Desktop File"
-msgstr "Создать файл"
+msgstr "Создать .desktop файл"
 
-#: src/window.ui:54
+#: src/window.ui:56
 msgid "Name"
 msgstr "Название"
 
-#: src/window.ui:70
+#: src/window.ui:72
 msgid "Exec"
 msgstr "Исполняемый файл"
 
-#: src/window.ui:84
+#: src/window.ui:97
 msgid "Icon"
-msgstr "Иконка приложения"
+msgstr "Значок приложения"
 
-#: src/window.ui:98
+#: src/window.ui:122
 msgid "Categories"
 msgstr "Категории"
 
-#: src/window.ui:114
+#: src/window.ui:138
 msgid "Comment"
 msgstr "Комментарий"
 
-#: src/window.ui:130
+#: src/window.ui:154
 msgid "Not Displayed in Menu"
-msgstr "Не Отображать в Меню"
+msgstr "Не отображать в меню"
 
-#: src/window.ui:143
+#: src/window.ui:168
 msgid "Run in Terminal"
-msgstr "Запускать в Терминале"
+msgstr "Запускать в терминале"
 
-#: src/window.vala:82
+#: src/window.vala:98
+#, c-format
 msgid ""
 "Error!\n"
-"Path: "
+"Path: %s does not exist!\n"
+"The program will not be able to perform its functions."
 msgstr ""
 "Ошибка!\n"
-"Путь: "
+"Путь: %s не существует!\n"
+"Программа не сможет выполнять свои функции."
 
-#: src/window.vala:82
-msgid " does not exist!"
-msgstr " не существует!"
-
-#: src/window.vala:82
-msgid "The program will not be able to perform its functions."
-msgstr "Программа не сможет выполнять свои функции."
-
-#: src/window.vala:106
+#: src/window.vala:133
 msgid "Open File"
 msgstr "Открыть файл"
 
-#: src/window.vala:106 src/window.vala:119 src/window.vala:152
-msgid "_Cancel"
-msgstr "_Отмена"
-
-#: src/window.vala:106 src/window.vala:119
-msgid "_Open"
-msgstr "_Открыть"
-
-#: src/window.vala:119
+#: src/window.vala:158
 msgid "Open Image"
 msgstr "Открыть изображение"
 
-#: src/window.vala:141
+#: src/window.vala:181
 msgid "Enter the name"
 msgstr "Введите название"
 
-#: src/window.vala:147
+#: src/window.vala:187
 msgid "A file with the same name already exists"
-msgstr "Файл с таким именем уже существует"
+msgstr "Файл с таким названием уже существует"
 
-#: src/window.vala:151
-msgid "Create file "
-msgstr "Создать файл "
+#: src/window.vala:191
+#, c-format
+msgid "Create file %s?"
+msgstr "Создать файл %s?"
 
-#: src/window.vala:153 src/window.vala:218
+#: src/window.vala:192
+msgid "_Cancel"
+msgstr "_Отменить"
+
+#: src/window.vala:193 src/window.vala:258
 msgid "_OK"
+msgstr "_OK"
+
+#: src/window.vala:241
+#, c-format
+msgid ""
+"File %s is created!\n"
+"Path: %s"
 msgstr ""
+"Файл %s был создан!\n"
+"Путь: %s"
 
-#: src/window.vala:201
-msgid "File "
-msgstr "Файл "
-
-#: src/window.vala:201
-msgid " is created!"
-msgstr " создан!"
-
-#: src/window.vala:201
-msgid "Path: "
-msgstr "Путь: "
-
-#: src/window.vala:203
+#: src/window.vala:243
 msgid "Error! Could not create file"
 msgstr "Ошибка! Не получилось создать файл"
+
+#~ msgid ""
+#~ "Error!\n"
+#~ "Path: "
+#~ msgstr ""
+#~ "Ошибка!\n"
+#~ "Путь: "
+
+#~ msgid " does not exist!"
+#~ msgstr " не существует!"
+
+#~ msgid "_Open"
+#~ msgstr "_Открыть"
+
+#~ msgid "File "
+#~ msgstr "Файл "
+
+#~ msgid "Path: "
+#~ msgstr "Путь: "
 
 #~ msgid "Message"
 #~ msgstr "Сообщение"
