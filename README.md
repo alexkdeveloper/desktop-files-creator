@@ -4,4 +4,4 @@ Simple app for creating .desktop files on GNU/Linux
 
 ![screenshot.png](/screenshot.png)
 
-[<img src="https://flathub.org/assets/badges/flathub-badge-en.svg" width="200" alt="Download on Flathub">](https://flathub.org/apps/details/com.github.alexkdeveloper.desktop-files-creator)
+It is recommended to use the GNOME Builder to build the application.
